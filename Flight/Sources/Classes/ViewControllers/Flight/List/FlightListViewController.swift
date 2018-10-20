@@ -65,7 +65,7 @@ extension FlightListViewController: UITableViewDelegate {
     
     //возвращает высоту ячейки
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension // <- выставляем автоматическую высоту или фиксированную -> return 100
+        return UITableView.automaticDimension // <- выставляем автоматическую высоту
     }
 }
 
