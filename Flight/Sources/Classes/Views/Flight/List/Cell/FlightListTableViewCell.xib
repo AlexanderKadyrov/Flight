@@ -18,32 +18,45 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYh-ls-bhl" userLabel="labelTitle">
-                        <rect key="frame" x="12" y="12" width="296" height="20.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ri7-Lb-tXA" userLabel="labelSubtitle">
-                        <rect key="frame" x="12" y="40.5" width="296" height="46.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bOw-Qj-jxA" userLabel="viewContainer">
+                        <rect key="frame" x="12" y="0.0" width="296" height="87"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYh-ls-bhl" userLabel="labelTitle">
+                                <rect key="frame" x="8" y="8" width="280" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ri7-Lb-tXA" userLabel="labelSubtitle">
+                                <rect key="frame" x="8" y="37" width="280" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YYh-ls-bhl" secondAttribute="trailing" constant="8" id="3mQ-1c-mxd"/>
+                            <constraint firstItem="Ri7-Lb-tXA" firstAttribute="top" secondItem="YYh-ls-bhl" secondAttribute="bottom" constant="8.5" id="AQB-BR-5p2"/>
+                            <constraint firstAttribute="trailing" secondItem="Ri7-Lb-tXA" secondAttribute="trailing" constant="8" id="Cmg-qs-XVy"/>
+                            <constraint firstItem="YYh-ls-bhl" firstAttribute="top" secondItem="bOw-Qj-jxA" secondAttribute="top" constant="8" id="fUP-FD-UZK"/>
+                            <constraint firstItem="YYh-ls-bhl" firstAttribute="leading" secondItem="bOw-Qj-jxA" secondAttribute="leading" constant="8" id="geh-Lb-aFm"/>
+                            <constraint firstAttribute="bottom" secondItem="Ri7-Lb-tXA" secondAttribute="bottom" constant="8" id="nw4-GB-hGY"/>
+                            <constraint firstItem="Ri7-Lb-tXA" firstAttribute="leading" secondItem="bOw-Qj-jxA" secondAttribute="leading" constant="8" id="rey-De-VVx"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="YYh-ls-bhl" firstAttribute="top" secondItem="B75-vb-UKQ" secondAttribute="top" constant="12" id="8Y8-wH-wcs"/>
-                    <constraint firstAttribute="bottom" secondItem="Ri7-Lb-tXA" secondAttribute="bottom" constant="12.5" id="HCz-MM-X0y"/>
-                    <constraint firstItem="YYh-ls-bhl" firstAttribute="leading" secondItem="B75-vb-UKQ" secondAttribute="leading" constant="12" id="IvB-Ya-zUh"/>
-                    <constraint firstItem="Ri7-Lb-tXA" firstAttribute="top" secondItem="YYh-ls-bhl" secondAttribute="bottom" constant="8" id="VnW-jR-uA8"/>
-                    <constraint firstItem="Ri7-Lb-tXA" firstAttribute="leading" secondItem="B75-vb-UKQ" secondAttribute="leading" constant="12" id="i94-IV-hwN"/>
-                    <constraint firstAttribute="trailing" secondItem="YYh-ls-bhl" secondAttribute="trailing" constant="12" id="pO9-eS-Vu2"/>
-                    <constraint firstAttribute="trailing" secondItem="Ri7-Lb-tXA" secondAttribute="trailing" constant="12" id="q5b-cz-tw3"/>
+                    <constraint firstItem="bOw-Qj-jxA" firstAttribute="top" secondItem="B75-vb-UKQ" secondAttribute="top" id="5sC-q3-Ghe"/>
+                    <constraint firstAttribute="trailing" secondItem="bOw-Qj-jxA" secondAttribute="trailing" constant="12" id="PB4-en-faG"/>
+                    <constraint firstAttribute="bottom" secondItem="bOw-Qj-jxA" secondAttribute="bottom" constant="12.5" id="W8N-85-qqg"/>
+                    <constraint firstItem="bOw-Qj-jxA" firstAttribute="leading" secondItem="B75-vb-UKQ" secondAttribute="leading" constant="12" id="hVv-w2-aHJ"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="labelSubtitle" destination="Ri7-Lb-tXA" id="rRc-Sg-i0t"/>
                 <outlet property="labelTitle" destination="YYh-ls-bhl" id="Hsv-Hh-w2s"/>
+                <outlet property="viewContainer" destination="bOw-Qj-jxA" id="AoZ-b3-6fy"/>
             </connections>
             <point key="canvasLocation" x="-93.75" y="35"/>
         </tableViewCell>
