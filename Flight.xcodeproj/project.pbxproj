@@ -12,6 +12,7 @@
 		113A2506217BDA1500AB90B9 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A2505217BDA1500AB90B9 /* UIColor+Extension.swift */; };
 		113A2509217BEA0800AB90B9 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A2508217BEA0800AB90B9 /* UIImage+Extension.swift */; };
 		113A250D217BEAD300AB90B9 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A250C217BEAD300AB90B9 /* NavigationViewController.swift */; };
+		113A2511217BEDB600AB90B9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 113A2513217BEDB600AB90B9 /* Localizable.strings */; };
 		115E3138217B2D1500357D6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E3137217B2D1500357D6D /* AppDelegate.swift */; };
 		115E313F217B2D1600357D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115E313E217B2D1600357D6D /* Assets.xcassets */; };
 		115E314D217B2D1600357D6D /* FlightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E314C217B2D1600357D6D /* FlightTests.swift */; };
@@ -57,6 +58,8 @@
 		113A2505217BDA1500AB90B9 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		113A2508217BEA0800AB90B9 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		113A250C217BEAD300AB90B9 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		113A2514217BEDC200AB90B9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		113A2515217BEDD200AB90B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		115E3134217B2D1500357D6D /* Flight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		115E3137217B2D1500357D6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		115E313E217B2D1600357D6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -151,6 +154,14 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		113A250E217BED6F00AB90B9 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				113A2513217BEDB600AB90B9 /* Localizable.strings */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
 		115E312B217B2D1500357D6D = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +250,7 @@
 		115E3169217B2E0600357D6D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				113A250E217BED6F00AB90B9 /* Localizable */,
 				115E318D217B3E0700357D6D /* JSONs */,
 				115E318C217B3DFE00357D6D /* Assets */,
 			);
@@ -487,8 +499,9 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				ru,
+				en,
 			);
 			mainGroup = 115E312B217B2D1500357D6D;
 			productRefGroup = 115E3135217B2D1500357D6D /* Products */;
@@ -510,6 +523,7 @@
 				115E3198217B586200357D6D /* FlightListViewController.xib in Resources */,
 				113A2503217BCFB600AB90B9 /* FlightListTableViewCell.xib in Resources */,
 				115E3193217B3E8F00357D6D /* seeder_move.json in Resources */,
+				113A2511217BEDB600AB90B9 /* Localizable.strings in Resources */,
 				115E3191217B3E6E00357D6D /* seeder_event.json in Resources */,
 				115E313F217B2D1600357D6D /* Assets.xcassets in Resources */,
 				115E318F217B3E4100357D6D /* seeder_notice.json in Resources */,
@@ -588,11 +602,24 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		113A2513217BEDB600AB90B9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				113A2514217BEDC200AB90B9 /* ru */,
+				113A2515217BEDD200AB90B9 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		115E315A217B2D1600357D6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -654,6 +681,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
