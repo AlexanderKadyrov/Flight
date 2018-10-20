@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import UIKit
 
 protocol FlightProtocol {
     var title: String { get }
     var subtitle: String { get }
+    var color: UIColor { get }
 }

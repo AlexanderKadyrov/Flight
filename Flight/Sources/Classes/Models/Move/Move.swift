@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Move: Codable {
     
@@ -54,5 +55,9 @@ extension Move: FlightProtocol {
             values.append(thisEstimateTime.toString)
         }
         return values.joined(separator: "\n")
+    }
+    
+    var color: UIColor {
+        return .colorLightRedOchre
     }
 }

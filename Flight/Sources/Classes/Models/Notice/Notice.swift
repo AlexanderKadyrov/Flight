@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct Notice {
     var flightDate: Date?
@@ -32,5 +33,9 @@ extension Notice: FlightProtocol {
             values.append(thisGate)
         }
         return values.joined(separator: "\n")
+    }
+    
+    var color: UIColor {
+        return .colorHansaYellow
     }
 }

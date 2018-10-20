@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 fileprivate let dateFormatEvent = "dd-MM-yyyy HH:mm:ss"
 
@@ -80,5 +81,9 @@ extension Event: FlightProtocol {
             values.append(thisEndTime.toString(.formatterTime))
         }
         return values.joined(separator: "\n")
+    }
+    
+    var color: UIColor {
+        return .colorSandyBrown
     }
 }
