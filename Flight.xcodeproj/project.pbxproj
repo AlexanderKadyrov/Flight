@@ -11,6 +11,7 @@
 		113A2503217BCFB600AB90B9 /* FlightListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113A2502217BCFB600AB90B9 /* FlightListTableViewCell.xib */; };
 		113A2506217BDA1500AB90B9 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A2505217BDA1500AB90B9 /* UIColor+Extension.swift */; };
 		113A2509217BEA0800AB90B9 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A2508217BEA0800AB90B9 /* UIImage+Extension.swift */; };
+		113A250D217BEAD300AB90B9 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A250C217BEAD300AB90B9 /* NavigationViewController.swift */; };
 		115E3138217B2D1500357D6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E3137217B2D1500357D6D /* AppDelegate.swift */; };
 		115E313F217B2D1600357D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115E313E217B2D1600357D6D /* Assets.xcassets */; };
 		115E314D217B2D1600357D6D /* FlightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E314C217B2D1600357D6D /* FlightTests.swift */; };
@@ -55,6 +56,7 @@
 		113A2502217BCFB600AB90B9 /* FlightListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlightListTableViewCell.xib; sourceTree = "<group>"; };
 		113A2505217BDA1500AB90B9 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		113A2508217BEA0800AB90B9 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		113A250C217BEAD300AB90B9 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		115E3134217B2D1500357D6D /* Flight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		115E3137217B2D1500357D6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		115E313E217B2D1600357D6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -133,6 +135,22 @@
 			path = UIImage;
 			sourceTree = "<group>";
 		};
+		113A250A217BEA9D00AB90B9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				115E316D217B2E6000357D6D /* Flight */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		113A250B217BEAAD00AB90B9 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				113A250C217BEAD300AB90B9 /* NavigationViewController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		115E312B217B2D1500357D6D = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +210,7 @@
 		115E3166217B2DD200357D6D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				113A250A217BEA9D00AB90B9 /* ViewControllers */,
 				115E3182217B323700357D6D /* Extensions */,
 				115E3167217B2DE100357D6D /* Controllers */,
 				115E3175217B2ECC00357D6D /* Models */,
@@ -229,7 +248,7 @@
 		115E316A217B2E3500357D6D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				115E316D217B2E6000357D6D /* Flight */,
+				113A250B217BEAAD00AB90B9 /* Navigation */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -521,6 +540,7 @@
 				115E3185217B325500357D6D /* DateFormatter+Extension.swift in Sources */,
 				115E318B217B3AD700357D6D /* TimeInterval+Extension.swift in Sources */,
 				115E3138217B2D1500357D6D /* AppDelegate.swift in Sources */,
+				113A250D217BEAD300AB90B9 /* NavigationViewController.swift in Sources */,
 				115E3177217B2EF200357D6D /* Notice.swift in Sources */,
 				115E3196217B57DA00357D6D /* BaseViewController.swift in Sources */,
 				113A2500217BCF7D00AB90B9 /* FlightListTableViewCell.swift in Sources */,
