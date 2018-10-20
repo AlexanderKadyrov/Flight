@@ -129,9 +129,9 @@
 		115E3165217B2DC400357D6D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				115E317F217B2F8E00357D6D /* SupportingFiles */,
 				115E3166217B2DD200357D6D /* Classes */,
 				115E3169217B2E0600357D6D /* Resources */,
+				115E317F217B2F8E00357D6D /* SupportingFiles */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
