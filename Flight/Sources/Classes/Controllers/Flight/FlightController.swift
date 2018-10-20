@@ -22,6 +22,13 @@ fileprivate let listEvent: [Event] = {
     return []
 }()
 
+fileprivate let listMove: [Move] = {
+    if let data = Data.resource("seeder_move"), let list = JSONDecoder.decode([Move].self, from: data) {
+        return list
+    }
+    return []
+}()
+
 class FlightController {
     public func rndItems() -> [FlightProtocol] {
         return []
