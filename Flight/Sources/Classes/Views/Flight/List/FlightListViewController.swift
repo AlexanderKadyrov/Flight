@@ -65,7 +65,7 @@ extension FlightListViewController: UITableViewDelegate {
 extension FlightListViewController: UITableViewDataSource {
     
     //возвращает кол-во секций
-    public func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
