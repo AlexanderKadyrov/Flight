@@ -8,6 +8,11 @@
 
 import UIKit
 
-class FlightListViewController: UIViewController {
+class FlightListViewController: BaseViewController {
     
+    @IBOutlet private weak var tableView: UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }
