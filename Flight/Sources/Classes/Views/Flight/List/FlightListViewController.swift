@@ -27,8 +27,9 @@ class FlightListViewController: BaseViewController {
     }
     
     private func makeTableView() {
-        let nib = UINib(nibName: cellIdentifier, bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: cellIdentifier)
+        tableView.tableHeaderView = UIView(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 12))
+        tableView.register(UINib(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
+        tableView.backgroundColor = .colorJungleGreen
         tableView.dataSource = self
         tableView.delegate = self
         makeRefreshControl()
