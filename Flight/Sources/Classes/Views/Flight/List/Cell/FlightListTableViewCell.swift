@@ -21,11 +21,17 @@ class FlightListTableViewCell: UITableViewCell {
     }
     
     //объявляем свойство и слушаем setter
-    public var item: FlightProtocol! {
+    public var item: FlightProtocol? {
         didSet {
-            viewContainer.backgroundColor = item.color
-            labelTitle.text = item.title
-            labelSubtitle.text = item.subtitle
+            guard let thisItem = item else { return }
+            
+            viewContainer.backgroundColor = thisItem.colorContainer
+            
+            labelTitle.textColor = thisItem.colorText
+            labelTitle.text = thisItem.title
+            
+            labelSubtitle.textColor = thisItem.colorText
+            labelSubtitle.text = thisItem.subtitle
         }
     }
 }
