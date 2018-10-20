@@ -9,7 +9,7 @@
 import Foundation
 
 class FlightController {
-    public func rndData() {
-        
+    public func rndItems() -> [FlightProtocol] {
+        return []
     }
 }

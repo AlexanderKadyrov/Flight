@@ -12,7 +12,20 @@ class FlightListViewController: BaseViewController {
     
     @IBOutlet private weak var tableView: UITableView!
     
+    private lazy var flightController = FlightController()
+    private var items: [FlightProtocol]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        makeToolbar()
+        makeItems()
+    }
+    
+    private func makeToolbar() {
+        self.title = ""
+    }
+    
+    private func makeItems() {
+        items = flightController.rndItems()
     }
 }
