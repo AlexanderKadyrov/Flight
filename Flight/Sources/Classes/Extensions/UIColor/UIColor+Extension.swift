@@ -11,6 +11,7 @@ import UIKit
 extension UIColor {
     
     static let colorBrilliantAzure = color(hex: "33A1FD")
+    static let colorOnyx = color(hex: "31393C")
     
     private static func color(hex: String) -> UIColor {
         var cString: String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
