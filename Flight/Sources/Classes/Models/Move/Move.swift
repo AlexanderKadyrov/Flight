@@ -8,10 +8,32 @@
 
 import Foundation
 
-class Move {
+class Move: Codable {
+    
     var fromPlace: String?
     var toPlace: String?
     var estimateTime: TimeInterval?
+    
+    enum CodingKeys: String, CodingKey {
+        case fromPlace
+        case toPlace
+        case estimateTime
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        fromPlace = try values.decode(String.self, forKey: .fromPlace)
+        toPlace = try values.decode(String.self, forKey: .toPlace)
+        let intEstimateTime = try values.decode(Int.self, forKey: .estimateTime)
+        estimateTime = TimeInterval(intEstimateTime)
+    }
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(fromPlace, forKey: .fromPlace)
+        try container.encode(toPlace, forKey: .toPlace)
+        try container.encode(estimateTime, forKey: .estimateTime)
+    }
 }
 
 extension Move: FlightProtocol {
