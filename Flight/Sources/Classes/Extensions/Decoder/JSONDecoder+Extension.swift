@@ -9,13 +9,15 @@
 import Foundation
 
 extension JSONDecoder {
-    static func decode<T>(_ type: T.Type, from data: Data?, with dateFormat: String) -> T? where T : Decodable {
+    static func decode<T>(_ type: T.Type, from data: Data?, with dateFormat: String? = nil) -> T? where T : Decodable {
         do {
             if let thisData = data {
-                let formatter = DateFormatter()
-                formatter.dateFormat = dateFormat
                 let decoder = JSONDecoder()
-                decoder.dateDecodingStrategy = .formatted(formatter)
+                if let format = dateFormat {
+                    let formatter = DateFormatter()
+                    formatter.dateFormat = format
+                    decoder.dateDecodingStrategy = .formatted(formatter)
+                }
                 return try decoder.decode(type, from: thisData)
             } else {
                 return nil
