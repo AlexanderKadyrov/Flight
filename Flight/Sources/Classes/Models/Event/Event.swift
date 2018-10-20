@@ -84,10 +84,10 @@ extension Event: FlightProtocol {
     }
     
     var colorContainer: UIColor {
-        return .lightGray
+        return .colorSandyBrown
     }
     
     var colorText: UIColor {
-        return .colorSandyBrown
+        return .lightGray
     }
 }

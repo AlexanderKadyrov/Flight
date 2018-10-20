@@ -58,10 +58,10 @@ extension Move: FlightProtocol {
     }
     
     var colorContainer: UIColor {
-        return .white
+        return .colorLightRedOchre
     }
     
     var colorText: UIColor {
-        return .colorLightRedOchre
+        return .white
     }
 }

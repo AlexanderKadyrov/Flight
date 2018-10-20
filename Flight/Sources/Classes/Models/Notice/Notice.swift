@@ -36,10 +36,10 @@ extension Notice: FlightProtocol {
     }
     
     var colorContainer: UIColor {
-        return .gray
+        return .colorHansaYellow
     }
     
     var colorText: UIColor {
-        return .colorHansaYellow
+        return .gray
     }
 }
