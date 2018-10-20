@@ -13,6 +13,7 @@ fileprivate let cellIdentifier = "FlightListTableViewCell"
 class FlightListViewController: BaseViewController {
     
     @IBOutlet private weak var tableView: UITableView!
+    private let refreshControl = UIRefreshControl()
     
     private lazy var flightController = FlightController()
     private var items: [FlightProtocol]!
@@ -22,7 +23,7 @@ class FlightListViewController: BaseViewController {
         super.viewDidLoad()
         makeTableView()
         makeToolbar()
-        makeItems()
+        fetchItems()
     }
     
     private func makeTableView() {
@@ -30,15 +31,26 @@ class FlightListViewController: BaseViewController {
         tableView.register(nib, forCellReuseIdentifier: cellIdentifier)
         tableView.dataSource = self
         tableView.delegate = self
+        makeRefreshControl()
+    }
+    
+    private func makeRefreshControl() {
+        refreshControl.addTarget(self, action: #selector(fetchItems), for: .valueChanged)
+        if #available(iOS 10.0, *) {
+            tableView.refreshControl = refreshControl
+        } else {
+            tableView.addSubview(refreshControl)
+        }
     }
     
     private func makeToolbar() {
         self.title = ""
     }
     
-    private func makeItems() {
+    @objc private func fetchItems() {
         items = flightController.rndItems()
         tableView.reloadData()
+        refreshControl.endRefreshing()
     }
 }
 
