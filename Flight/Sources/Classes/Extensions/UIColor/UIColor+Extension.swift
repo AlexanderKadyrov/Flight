@@ -10,11 +10,7 @@ import UIKit
 
 extension UIColor {
     
-    static let colorJapaneseIndigo = color(hex: "264653")
-    static let colorJungleGreen = color(hex: "2A9D8F")
-    static let colorHansaYellow = color(hex: "E9C46A")
-    static let colorSandyBrown = color(hex: "F4A261")
-    static let colorLightRedOchre = color(hex: "E76F51")
+    static let colorBrilliantAzure = color(hex: "33A1FD")
     
     private static func color(hex: String) -> UIColor {
         var cString: String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()

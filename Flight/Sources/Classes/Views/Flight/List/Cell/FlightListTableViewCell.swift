@@ -24,13 +24,8 @@ class FlightListTableViewCell: UITableViewCell {
     public var item: FlightProtocol? {
         didSet {
             guard let thisItem = item else { return }
-            
-            viewContainer.backgroundColor = thisItem.colorContainer
-            
-            labelTitle.textColor = thisItem.colorText
+            viewContainer.backgroundColor = .colorBrilliantAzure
             labelTitle.text = thisItem.title
-            
-            labelSubtitle.textColor = thisItem.colorText
             labelSubtitle.text = thisItem.subtitle
         }
     }
