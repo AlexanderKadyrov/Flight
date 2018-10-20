@@ -57,7 +57,11 @@ extension Move: FlightProtocol {
         return values.joined(separator: "\n")
     }
     
-    var color: UIColor {
+    var colorContainer: UIColor {
+        return .white
+    }
+    
+    var colorText: UIColor {
         return .colorLightRedOchre
     }
 }
