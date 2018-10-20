@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+class FlightController {
+    public func rndData() {
+        
+    }
+}
