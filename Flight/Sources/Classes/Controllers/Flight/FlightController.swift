@@ -8,10 +8,15 @@
 
 import Foundation
 
-fileprivate let dateFormatNotice = "dd.MM.yyyy"
-
 fileprivate let listNotice: [Notice] = {
-    if let data = Data.resource("seeder_notice"), let list = JSONDecoder.decode([Notice].self, from: data, with: dateFormatNotice) {
+    if let data = Data.resource("seeder_notice"), let list = JSONDecoder.decode([Notice].self, from: data, with: "dd.MM.yyyy") {
+        return list
+    }
+    return []
+}()
+
+fileprivate let listEvent: [Event] = {
+    if let data = Data.resource("seeder_event"), let list = JSONDecoder.decode([Event].self, from: data) {
         return list
     }
     return []
