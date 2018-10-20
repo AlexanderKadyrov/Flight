@@ -18,21 +18,28 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYh-ls-bhl" userLabel="labelTitle">
-                        <rect key="frame" x="12" y="12" width="296" height="30"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYh-ls-bhl" userLabel="labelTitle">
+                        <rect key="frame" x="12" y="12" width="296" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ri7-Lb-tXA" userLabel="labelSubtitle">
-                        <rect key="frame" x="12" y="50" width="296" height="37"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ri7-Lb-tXA" userLabel="labelSubtitle">
+                        <rect key="frame" x="12" y="40.5" width="296" height="46.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="YYh-ls-bhl" firstAttribute="top" secondItem="B75-vb-UKQ" secondAttribute="top" constant="12" id="8Y8-wH-wcs"/>
+                    <constraint firstAttribute="bottom" secondItem="Ri7-Lb-tXA" secondAttribute="bottom" constant="12.5" id="HCz-MM-X0y"/>
+                    <constraint firstItem="YYh-ls-bhl" firstAttribute="leading" secondItem="B75-vb-UKQ" secondAttribute="leading" constant="12" id="IvB-Ya-zUh"/>
+                    <constraint firstItem="Ri7-Lb-tXA" firstAttribute="top" secondItem="YYh-ls-bhl" secondAttribute="bottom" constant="8" id="VnW-jR-uA8"/>
+                    <constraint firstItem="Ri7-Lb-tXA" firstAttribute="leading" secondItem="B75-vb-UKQ" secondAttribute="leading" constant="12" id="i94-IV-hwN"/>
+                    <constraint firstAttribute="trailing" secondItem="YYh-ls-bhl" secondAttribute="trailing" constant="12" id="pO9-eS-Vu2"/>
+                    <constraint firstAttribute="trailing" secondItem="Ri7-Lb-tXA" secondAttribute="trailing" constant="12" id="q5b-cz-tw3"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="labelSubtitle" destination="Ri7-Lb-tXA" id="rRc-Sg-i0t"/>
