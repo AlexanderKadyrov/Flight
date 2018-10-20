@@ -1,0 +1,57 @@
+[
+    {
+        "fromPlace": "Екатеринбург (SVX)",
+        "toPlace": "Москва (DME)",
+        "estimateTime": "8400"
+    },
+    {
+        "fromPlace": "Санкт-Петербург (LED)",
+        "toPlace": "Калининград (KGD)",
+        "estimateTime": "5700"
+    },
+    {
+        "fromPlace": "Москва (DME)",
+        "toPlace": "Барселона (BCN)",
+        "estimateTime": "16800"
+    },
+    {
+        "fromPlace": "Москва (VKO)",
+        "toPlace": "Сочи, Адлер (AER)",
+        "estimateTime": "8700"
+    },
+    {
+        "fromPlace": "Москва (DME)",
+        "toPlace": "Барнаул (BAX)",
+        "estimateTime": "14400"
+    },
+    {
+        "fromPlace": "Санкт-Петербург (LED)",
+        "toPlace": "Екатеринбург (SVX)",
+        "estimateTime": "9600"
+    },
+    {
+        "fromPlace": "Москва (VKO)",
+        "toPlace": "Венеция Тревизо, Италия (TSF)",
+        "estimateTime": "12600"
+    },
+    {
+        "fromPlace": "Бангкок, Суварнабхуми (BKK)",
+        "toPlace": "Новосибирск (OVB)",
+        "estimateTime": "28200"
+    },
+    {
+        "fromPlace": "Милан, Малпенса (MXP)",
+        "toPlace": "Париж, Шарль де Голль (CDG)",
+        "estimateTime": "5400"
+    },
+    {
+        "fromPlace": "Женева (GVA)",
+        "toPlace": "Рим, Фьюмичино (FCO)",
+        "estimateTime": "5400"
+    },
+    {
+        "fromPlace": "Жуковский (ZIA)",
+        "toPlace": "Стамбул, Ататюрк (IST)",
+        "estimateTime": "11100"
+    },
+]

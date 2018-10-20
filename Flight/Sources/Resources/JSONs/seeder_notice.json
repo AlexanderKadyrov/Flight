@@ -1,0 +1,46 @@
+[
+    {
+        "flightDate": "20.10.2018",
+        "gate": "A1"
+    },
+    {
+        "flightDate": "19.11.2018",
+        "gate": "A2"
+    },
+    {
+        "flightDate": "21.10.2018",
+        "gate": "B3"
+    },
+    {
+        "flightDate": "25.09.2019",
+        "gate": "C7"
+    },
+    {
+        "flightDate": "01.01.2019",
+        "gate": "A1"
+    },
+    {
+        "flightDate": "31.12.2018",
+        "gate": "F3"
+    },
+    {
+        "flightDate": "07.11.2018",
+        "gate": "A7"
+    },
+    {
+        "flightDate": "03.07.2019",
+        "gate": "D3"
+    },
+    {
+        "flightDate": "12.05.2019",
+        "gate": "G1"
+    },
+    {
+        "flightDate": "15.09.2019",
+        "gate": "A3"
+    },
+    {
+        "flightDate": "17.04.2019",
+        "gate": "С3"
+    },
+]

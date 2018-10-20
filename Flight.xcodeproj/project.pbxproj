@@ -21,6 +21,9 @@
 		115E3185217B325500357D6D /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E3184217B325500357D6D /* DateFormatter+Extension.swift */; };
 		115E3188217B349A00357D6D /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E3187217B349A00357D6D /* Date+Extension.swift */; };
 		115E318B217B3AD700357D6D /* TimeInterval+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E318A217B3AD700357D6D /* TimeInterval+Extension.swift */; };
+		115E318F217B3E4100357D6D /* seeder_notice.json in Resources */ = {isa = PBXBuildFile; fileRef = 115E318E217B3E4100357D6D /* seeder_notice.json */; };
+		115E3191217B3E6E00357D6D /* seeder_event.json in Resources */ = {isa = PBXBuildFile; fileRef = 115E3190217B3E6E00357D6D /* seeder_event.json */; };
+		115E3193217B3E8F00357D6D /* seeder_move.json in Resources */ = {isa = PBXBuildFile; fileRef = 115E3192217B3E8F00357D6D /* seeder_move.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		115E3184217B325500357D6D /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
 		115E3187217B349A00357D6D /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		115E318A217B3AD700357D6D /* TimeInterval+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Extension.swift"; sourceTree = "<group>"; };
+		115E318E217B3E4100357D6D /* seeder_notice.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = seeder_notice.json; sourceTree = "<group>"; };
+		115E3190217B3E6E00357D6D /* seeder_event.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = seeder_event.json; sourceTree = "<group>"; };
+		115E3192217B3E8F00357D6D /* seeder_move.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = seeder_move.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,7 +181,8 @@
 		115E3169217B2E0600357D6D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				115E313E217B2D1600357D6D /* Assets.xcassets */,
+				115E318D217B3E0700357D6D /* JSONs */,
+				115E318C217B3DFE00357D6D /* Assets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -298,6 +305,24 @@
 			path = TimeInterval;
 			sourceTree = "<group>";
 		};
+		115E318C217B3DFE00357D6D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				115E313E217B2D1600357D6D /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		115E318D217B3E0700357D6D /* JSONs */ = {
+			isa = PBXGroup;
+			children = (
+				115E318E217B3E4100357D6D /* seeder_notice.json */,
+				115E3190217B3E6E00357D6D /* seeder_event.json */,
+				115E3192217B3E8F00357D6D /* seeder_move.json */,
+			);
+			path = JSONs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -402,7 +427,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				115E3193217B3E8F00357D6D /* seeder_move.json in Resources */,
+				115E3191217B3E6E00357D6D /* seeder_event.json in Resources */,
 				115E313F217B2D1600357D6D /* Assets.xcassets in Resources */,
+				115E318F217B3E4100357D6D /* seeder_notice.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
