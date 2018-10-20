@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		113A2500217BCF7D00AB90B9 /* FlightListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A24FF217BCF7D00AB90B9 /* FlightListTableViewCell.swift */; };
 		113A2503217BCFB600AB90B9 /* FlightListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113A2502217BCFB600AB90B9 /* FlightListTableViewCell.xib */; };
+		113A2506217BDA1500AB90B9 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A2505217BDA1500AB90B9 /* UIColor+Extension.swift */; };
 		115E3138217B2D1500357D6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E3137217B2D1500357D6D /* AppDelegate.swift */; };
 		115E313F217B2D1600357D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115E313E217B2D1600357D6D /* Assets.xcassets */; };
 		115E314D217B2D1600357D6D /* FlightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E314C217B2D1600357D6D /* FlightTests.swift */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		113A24FF217BCF7D00AB90B9 /* FlightListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListTableViewCell.swift; sourceTree = "<group>"; };
 		113A2502217BCFB600AB90B9 /* FlightListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlightListTableViewCell.xib; sourceTree = "<group>"; };
+		113A2505217BDA1500AB90B9 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		115E3134217B2D1500357D6D /* Flight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		115E3137217B2D1500357D6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		115E313E217B2D1600357D6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,6 +113,14 @@
 				113A2502217BCFB600AB90B9 /* FlightListTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		113A2504217BD9F400AB90B9 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				113A2505217BDA1500AB90B9 /* UIColor+Extension.swift */,
+			);
+			path = UIColor;
 			sourceTree = "<group>";
 		};
 		115E312B217B2D1500357D6D = {
@@ -290,6 +300,7 @@
 				115E3183217B324000357D6D /* DateFormatter */,
 				115E3189217B3AC300357D6D /* TimeInterval */,
 				115E319D217B63DF00357D6D /* Decoder */,
+				113A2504217BD9F400AB90B9 /* UIColor */,
 				115E3186217B346E00357D6D /* Date */,
 				115E319A217B5DAE00357D6D /* Data */,
 			);
@@ -505,6 +516,7 @@
 				115E319C217B5DC900357D6D /* Data+Extension.swift in Sources */,
 				115E317E217B2F3900357D6D /* Move.swift in Sources */,
 				115E3188217B349A00357D6D /* Date+Extension.swift in Sources */,
+				113A2506217BDA1500AB90B9 /* UIColor+Extension.swift in Sources */,
 				115E316C217B2E5700357D6D /* FlightListViewController.swift in Sources */,
 				115E317B217B2F1E00357D6D /* Event.swift in Sources */,
 				115E319F217B640800357D6D /* JSONDecoder+Extension.swift in Sources */,
