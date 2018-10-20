@@ -34,12 +34,4 @@ extension Notice: FlightProtocol {
         }
         return values.joined(separator: "\n")
     }
-    
-    var colorContainer: UIColor {
-        return .colorHansaYellow
-    }
-    
-    var colorText: UIColor {
-        return .gray
-    }
 }

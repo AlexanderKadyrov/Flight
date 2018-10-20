@@ -82,12 +82,4 @@ extension Event: FlightProtocol {
         }
         return values.joined(separator: "\n")
     }
-    
-    var colorContainer: UIColor {
-        return .colorSandyBrown
-    }
-    
-    var colorText: UIColor {
-        return .white
-    }
 }
