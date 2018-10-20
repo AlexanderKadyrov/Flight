@@ -59,12 +59,16 @@ class FlightListViewController: BaseViewController {
         tableView.reloadData()
         refreshControl.endRefreshing()
     }
+    
+    internal override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 }
 
 extension FlightListViewController: UITableViewDelegate {
     
     //возвращает высоту ячейки
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    internal func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension // <- выставляем автоматическую высоту
     }
 }
@@ -72,17 +76,17 @@ extension FlightListViewController: UITableViewDelegate {
 extension FlightListViewController: UITableViewDataSource {
     
     //возвращает кол-во секций
-    func numberOfSections(in tableView: UITableView) -> Int {
+    internal func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     //возвращает кол-во ячеек
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    internal func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
     
     //возвращает подготовленную ячейку
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = items[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! FlightListTableViewCell
         cell.item = item
