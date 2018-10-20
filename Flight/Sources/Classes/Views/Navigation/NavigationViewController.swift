@@ -18,8 +18,8 @@ class NavigationViewController: UINavigationController {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
-    init(controller: UIViewController, color: UIColor = .white) {
-        super.init(rootViewController: controller)
+    init(_ rootViewController: UIViewController, color: UIColor = .white) {
+        super.init(rootViewController: rootViewController)
         self.navigationBar.isTranslucent = false
         self.navigationBar.setBackgroundImage(UIImage(color: color), for: .default)
     }

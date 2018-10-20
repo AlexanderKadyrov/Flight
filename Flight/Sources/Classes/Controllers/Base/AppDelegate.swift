@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         let vc = FlightListViewController()
-        let nv = NavigationViewController(controller: vc, color: .colorOnyx)
+        let nv = NavigationViewController(vc, color: .colorOnyx)
         window?.rootViewController = nv
         window?.makeKeyAndVisible()
         return true
