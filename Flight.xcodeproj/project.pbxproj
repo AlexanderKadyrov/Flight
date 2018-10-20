@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		115E3138217B2D1500357D6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E3137217B2D1500357D6D /* AppDelegate.swift */; };
-		115E313A217B2D1500357D6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E3139217B2D1500357D6D /* ViewController.swift */; };
-		115E313D217B2D1500357D6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115E313B217B2D1500357D6D /* Main.storyboard */; };
 		115E313F217B2D1600357D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115E313E217B2D1600357D6D /* Assets.xcassets */; };
-		115E3142217B2D1600357D6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115E3140217B2D1600357D6D /* LaunchScreen.storyboard */; };
 		115E314D217B2D1600357D6D /* FlightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E314C217B2D1600357D6D /* FlightTests.swift */; };
 		115E3158217B2D1600357D6D /* FlightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E3157217B2D1600357D6D /* FlightUITests.swift */; };
+		115E316C217B2E5700357D6D /* FlightListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E316B217B2E5700357D6D /* FlightListViewController.swift */; };
+		115E3171217B2E9000357D6D /* FlightDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E3170217B2E9000357D6D /* FlightDetailViewController.swift */; };
+		115E3174217B2EC300357D6D /* FlightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E3173217B2EC300357D6D /* FlightController.swift */; };
+		115E3177217B2EF200357D6D /* Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E3176217B2EF200357D6D /* Notice.swift */; };
+		115E317B217B2F1E00357D6D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E317A217B2F1E00357D6D /* Event.swift */; };
+		115E317E217B2F3900357D6D /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E317D217B2F3900357D6D /* Move.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +39,7 @@
 /* Begin PBXFileReference section */
 		115E3134217B2D1500357D6D /* Flight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		115E3137217B2D1500357D6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		115E3139217B2D1500357D6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		115E313C217B2D1500357D6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		115E313E217B2D1600357D6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		115E3141217B2D1600357D6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		115E3143217B2D1600357D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		115E3148217B2D1600357D6D /* FlightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		115E314C217B2D1600357D6D /* FlightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTests.swift; sourceTree = "<group>"; };
@@ -47,6 +47,12 @@
 		115E3153217B2D1600357D6D /* FlightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		115E3157217B2D1600357D6D /* FlightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightUITests.swift; sourceTree = "<group>"; };
 		115E3159217B2D1600357D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		115E316B217B2E5700357D6D /* FlightListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListViewController.swift; sourceTree = "<group>"; };
+		115E3170217B2E9000357D6D /* FlightDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailViewController.swift; sourceTree = "<group>"; };
+		115E3173217B2EC300357D6D /* FlightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightController.swift; sourceTree = "<group>"; };
+		115E3176217B2EF200357D6D /* Notice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notice.swift; sourceTree = "<group>"; };
+		115E317A217B2F1E00357D6D /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		115E317D217B2F3900357D6D /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,7 @@
 		115E3136217B2D1500357D6D /* Flight */ = {
 			isa = PBXGroup;
 			children = (
-				115E3137217B2D1500357D6D /* AppDelegate.swift */,
-				115E3139217B2D1500357D6D /* ViewController.swift */,
-				115E313B217B2D1500357D6D /* Main.storyboard */,
-				115E313E217B2D1600357D6D /* Assets.xcassets */,
-				115E3140217B2D1600357D6D /* LaunchScreen.storyboard */,
-				115E3143217B2D1600357D6D /* Info.plist */,
+				115E3165217B2DC400357D6D /* Sources */,
 			);
 			path = Flight;
 			sourceTree = "<group>";
@@ -123,6 +124,134 @@
 				115E3159217B2D1600357D6D /* Info.plist */,
 			);
 			path = FlightUITests;
+			sourceTree = "<group>";
+		};
+		115E3165217B2DC400357D6D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				115E317F217B2F8E00357D6D /* SupportingFiles */,
+				115E3166217B2DD200357D6D /* Classes */,
+				115E3169217B2E0600357D6D /* Resources */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		115E3166217B2DD200357D6D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				115E3167217B2DE100357D6D /* Controllers */,
+				115E3175217B2ECC00357D6D /* Models */,
+				115E316A217B2E3500357D6D /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		115E3167217B2DE100357D6D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				115E3172217B2EB000357D6D /* Flight */,
+				115E3168217B2DE600357D6D /* Base */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		115E3168217B2DE600357D6D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				115E3137217B2D1500357D6D /* AppDelegate.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		115E3169217B2E0600357D6D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				115E313E217B2D1600357D6D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		115E316A217B2E3500357D6D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				115E316D217B2E6000357D6D /* Flight */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		115E316D217B2E6000357D6D /* Flight */ = {
+			isa = PBXGroup;
+			children = (
+				115E316E217B2E6F00357D6D /* List */,
+				115E316F217B2E7800357D6D /* Detail */,
+			);
+			path = Flight;
+			sourceTree = "<group>";
+		};
+		115E316E217B2E6F00357D6D /* List */ = {
+			isa = PBXGroup;
+			children = (
+				115E316B217B2E5700357D6D /* FlightListViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		115E316F217B2E7800357D6D /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				115E3170217B2E9000357D6D /* FlightDetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		115E3172217B2EB000357D6D /* Flight */ = {
+			isa = PBXGroup;
+			children = (
+				115E3173217B2EC300357D6D /* FlightController.swift */,
+			);
+			path = Flight;
+			sourceTree = "<group>";
+		};
+		115E3175217B2ECC00357D6D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				115E3178217B2F0200357D6D /* Notice */,
+				115E3179217B2F1400357D6D /* Event */,
+				115E317C217B2F2C00357D6D /* Move */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		115E3178217B2F0200357D6D /* Notice */ = {
+			isa = PBXGroup;
+			children = (
+				115E3176217B2EF200357D6D /* Notice.swift */,
+			);
+			path = Notice;
+			sourceTree = "<group>";
+		};
+		115E3179217B2F1400357D6D /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				115E317A217B2F1E00357D6D /* Event.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		115E317C217B2F2C00357D6D /* Move */ = {
+			isa = PBXGroup;
+			children = (
+				115E317D217B2F3900357D6D /* Move.swift */,
+			);
+			path = Move;
+			sourceTree = "<group>";
+		};
+		115E317F217B2F8E00357D6D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				115E3143217B2D1600357D6D /* Info.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +358,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				115E3142217B2D1600357D6D /* LaunchScreen.storyboard in Resources */,
 				115E313F217B2D1600357D6D /* Assets.xcassets in Resources */,
-				115E313D217B2D1500357D6D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +383,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				115E313A217B2D1500357D6D /* ViewController.swift in Sources */,
 				115E3138217B2D1500357D6D /* AppDelegate.swift in Sources */,
+				115E3171217B2E9000357D6D /* FlightDetailViewController.swift in Sources */,
+				115E3177217B2EF200357D6D /* Notice.swift in Sources */,
+				115E317E217B2F3900357D6D /* Move.swift in Sources */,
+				115E316C217B2E5700357D6D /* FlightListViewController.swift in Sources */,
+				115E317B217B2F1E00357D6D /* Event.swift in Sources */,
+				115E3174217B2EC300357D6D /* FlightController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,25 +423,6 @@
 			targetProxy = 115E3154217B2D1600357D6D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		115E313B217B2D1500357D6D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				115E313C217B2D1500357D6D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		115E3140217B2D1600357D6D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				115E3141217B2D1600357D6D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		115E315A217B2D1600357D6D /* Debug */ = {
@@ -433,7 +546,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Flight/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Flight/Sources/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +563,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Flight/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Flight/Sources/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
