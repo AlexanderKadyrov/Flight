@@ -51,7 +51,7 @@ class FlightListViewController: BaseViewController {
             NSAttributedString.Key.font: navigationTitleFont,
             NSAttributedString.Key.foregroundColor: UIColor.white
         ]
-        self.title = "flight_navigation_bar_title".localized()
+        self.title = "flight_navigation_bar_title".localized() + " " + "App"
     }
     
     @objc private func fetchItems() {
