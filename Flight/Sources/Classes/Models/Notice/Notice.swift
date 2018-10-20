@@ -7,3 +7,20 @@
 //
 
 import Foundation
+
+struct Notice {
+    var flightDate: Date?
+    var gate: String?
+}
+
+extension Notice: FlightProtocol {
+    
+    var title: String {
+        return String(describing: type(of: self))
+    }
+    
+    var subtitle: String {
+        guard let date = flightDate else { return "" }
+        return date.toString(.formatterDate)
+    }
+}

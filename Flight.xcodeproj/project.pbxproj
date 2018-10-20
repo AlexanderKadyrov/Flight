@@ -17,6 +17,9 @@
 		115E3177217B2EF200357D6D /* Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E3176217B2EF200357D6D /* Notice.swift */; };
 		115E317B217B2F1E00357D6D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E317A217B2F1E00357D6D /* Event.swift */; };
 		115E317E217B2F3900357D6D /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E317D217B2F3900357D6D /* Move.swift */; };
+		115E3181217B316600357D6D /* FlightProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E3180217B316600357D6D /* FlightProtocol.swift */; };
+		115E3185217B325500357D6D /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E3184217B325500357D6D /* DateFormatter+Extension.swift */; };
+		115E3188217B349A00357D6D /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E3187217B349A00357D6D /* Date+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		115E3176217B2EF200357D6D /* Notice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notice.swift; sourceTree = "<group>"; };
 		115E317A217B2F1E00357D6D /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		115E317D217B2F3900357D6D /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
+		115E3180217B316600357D6D /* FlightProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightProtocol.swift; sourceTree = "<group>"; };
+		115E3184217B325500357D6D /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
+		115E3187217B349A00357D6D /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +145,7 @@
 		115E3166217B2DD200357D6D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				115E3182217B323700357D6D /* Extensions */,
 				115E3167217B2DE100357D6D /* Controllers */,
 				115E3175217B2ECC00357D6D /* Models */,
 				115E316A217B2E3500357D6D /* Views */,
@@ -218,6 +225,7 @@
 				115E3178217B2F0200357D6D /* Notice */,
 				115E3179217B2F1400357D6D /* Event */,
 				115E317C217B2F2C00357D6D /* Move */,
+				115E3180217B316600357D6D /* FlightProtocol.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -252,6 +260,31 @@
 				115E3143217B2D1600357D6D /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		115E3182217B323700357D6D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				115E3183217B324000357D6D /* DateFormatter */,
+				115E3186217B346E00357D6D /* Date */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		115E3183217B324000357D6D /* DateFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				115E3184217B325500357D6D /* DateFormatter+Extension.swift */,
+			);
+			path = DateFormatter;
+			sourceTree = "<group>";
+		};
+		115E3186217B346E00357D6D /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				115E3187217B349A00357D6D /* Date+Extension.swift */,
+			);
+			path = Date;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,13 +416,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				115E3185217B325500357D6D /* DateFormatter+Extension.swift in Sources */,
 				115E3138217B2D1500357D6D /* AppDelegate.swift in Sources */,
 				115E3171217B2E9000357D6D /* FlightDetailViewController.swift in Sources */,
 				115E3177217B2EF200357D6D /* Notice.swift in Sources */,
 				115E317E217B2F3900357D6D /* Move.swift in Sources */,
+				115E3188217B349A00357D6D /* Date+Extension.swift in Sources */,
 				115E316C217B2E5700357D6D /* FlightListViewController.swift in Sources */,
 				115E317B217B2F1E00357D6D /* Event.swift in Sources */,
 				115E3174217B2EC300357D6D /* FlightController.swift in Sources */,
+				115E3181217B316600357D6D /* FlightProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
