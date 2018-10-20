@@ -26,6 +26,7 @@
 		115E3196217B57DA00357D6D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E3195217B57DA00357D6D /* BaseViewController.swift */; };
 		115E3198217B586200357D6D /* FlightListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 115E3197217B586200357D6D /* FlightListViewController.xib */; };
 		115E319C217B5DC900357D6D /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E319B217B5DC900357D6D /* Data+Extension.swift */; };
+		115E319F217B640800357D6D /* JSONDecoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E319E217B640800357D6D /* JSONDecoder+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		115E3195217B57DA00357D6D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		115E3197217B586200357D6D /* FlightListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlightListViewController.xib; sourceTree = "<group>"; };
 		115E319B217B5DC900357D6D /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		115E319E217B640800357D6D /* JSONDecoder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +275,7 @@
 			children = (
 				115E3183217B324000357D6D /* DateFormatter */,
 				115E3189217B3AC300357D6D /* TimeInterval */,
+				115E319D217B63DF00357D6D /* Decoder */,
 				115E3186217B346E00357D6D /* Date */,
 				115E319A217B5DAE00357D6D /* Data */,
 			);
@@ -335,6 +338,14 @@
 				115E319B217B5DC900357D6D /* Data+Extension.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		115E319D217B63DF00357D6D /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				115E319E217B640800357D6D /* JSONDecoder+Extension.swift */,
+			);
+			path = Decoder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -480,6 +491,7 @@
 				115E3188217B349A00357D6D /* Date+Extension.swift in Sources */,
 				115E316C217B2E5700357D6D /* FlightListViewController.swift in Sources */,
 				115E317B217B2F1E00357D6D /* Event.swift in Sources */,
+				115E319F217B640800357D6D /* JSONDecoder+Extension.swift in Sources */,
 				115E3174217B2EC300357D6D /* FlightController.swift in Sources */,
 				115E3181217B316600357D6D /* FlightProtocol.swift in Sources */,
 			);

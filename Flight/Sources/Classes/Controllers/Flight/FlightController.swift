@@ -8,13 +8,17 @@
 
 import Foundation
 
+fileprivate let dateFormat = "dd-MM-yyyy HH:mm:ss"
+
+fileprivate let listNotice: [Notice] = {
+    if let data = Data.resource("seeder_notice"), let list = JSONDecoder.decode([Notice].self, from: data, with: dateFormat) {
+        return list
+    }
+    return []
+}()
+
 class FlightController {
     public func rndItems() -> [FlightProtocol] {
-        
-        let dataNotice = Data.resource("seeder_notice")
-        
-        //let listNotice = try! JSONDecoder().decode([Notice].self, from: dataNotice)
-        
         return []
     }
 }
