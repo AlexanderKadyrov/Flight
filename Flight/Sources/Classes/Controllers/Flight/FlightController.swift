@@ -8,21 +8,21 @@
 
 import Foundation
 
-fileprivate let listNotice: [Notice] = {
+fileprivate let listNotice: [FlightProtocol] = {
     if let data = Data.resource("seeder_notice"), let list = JSONDecoder.decode([Notice].self, from: data, with: "dd.MM.yyyy") {
         return list
     }
     return []
 }()
 
-fileprivate let listEvent: [Event] = {
+fileprivate let listEvent: [FlightProtocol] = {
     if let data = Data.resource("seeder_event"), let list = JSONDecoder.decode([Event].self, from: data) {
         return list
     }
     return []
 }()
 
-fileprivate let listMove: [Move] = {
+fileprivate let listMove: [FlightProtocol] = {
     if let data = Data.resource("seeder_move"), let list = JSONDecoder.decode([Move].self, from: data) {
         return list
     }
@@ -31,6 +31,15 @@ fileprivate let listMove: [Move] = {
 
 class FlightController {
     public func rndItems() -> [FlightProtocol] {
-        return []
+        //from 10 to 100 - rnd
+        var items = [FlightProtocol]()
+        let itemsCount = Int.random(in: 10..<101)
+        let flights = [listNotice, listEvent, listMove]
+        for _ in 1...itemsCount {
+            if let flight = flights.randomElement(), let element = flight.randomElement() {
+                items.append(element)
+            }
+        }
+        return items
     }
 }
