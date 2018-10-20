@@ -6,4 +6,8 @@
 //  Copyright © 2018 Alexander Kadyrov. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class FlightDetailViewController: UIViewController {
+    
+}
