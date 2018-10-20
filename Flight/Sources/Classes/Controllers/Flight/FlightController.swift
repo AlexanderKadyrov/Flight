@@ -10,6 +10,11 @@ import Foundation
 
 class FlightController {
     public func rndItems() -> [FlightProtocol] {
+        
+        let dataNotice = Data.resource("seeder_notice")
+        
+        //let listNotice = try! JSONDecoder().decode([Notice].self, from: dataNotice)
+        
         return []
     }
 }

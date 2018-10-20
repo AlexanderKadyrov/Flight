@@ -25,6 +25,7 @@
 		115E3193217B3E8F00357D6D /* seeder_move.json in Resources */ = {isa = PBXBuildFile; fileRef = 115E3192217B3E8F00357D6D /* seeder_move.json */; };
 		115E3196217B57DA00357D6D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E3195217B57DA00357D6D /* BaseViewController.swift */; };
 		115E3198217B586200357D6D /* FlightListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 115E3197217B586200357D6D /* FlightListViewController.xib */; };
+		115E319C217B5DC900357D6D /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E319B217B5DC900357D6D /* Data+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		115E3192217B3E8F00357D6D /* seeder_move.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = seeder_move.json; sourceTree = "<group>"; };
 		115E3195217B57DA00357D6D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		115E3197217B586200357D6D /* FlightListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlightListViewController.xib; sourceTree = "<group>"; };
+		115E319B217B5DC900357D6D /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,6 +274,7 @@
 				115E3183217B324000357D6D /* DateFormatter */,
 				115E3189217B3AC300357D6D /* TimeInterval */,
 				115E3186217B346E00357D6D /* Date */,
+				115E319A217B5DAE00357D6D /* Data */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -324,6 +327,14 @@
 				115E3195217B57DA00357D6D /* BaseViewController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		115E319A217B5DAE00357D6D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				115E319B217B5DC900357D6D /* Data+Extension.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -464,6 +475,7 @@
 				115E3138217B2D1500357D6D /* AppDelegate.swift in Sources */,
 				115E3177217B2EF200357D6D /* Notice.swift in Sources */,
 				115E3196217B57DA00357D6D /* BaseViewController.swift in Sources */,
+				115E319C217B5DC900357D6D /* Data+Extension.swift in Sources */,
 				115E317E217B2F3900357D6D /* Move.swift in Sources */,
 				115E3188217B349A00357D6D /* Date+Extension.swift in Sources */,
 				115E316C217B2E5700357D6D /* FlightListViewController.swift in Sources */,

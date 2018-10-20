@@ -13,6 +13,10 @@ struct Notice {
     var gate: String?
 }
 
+extension Notice: Codable {
+    
+}
+
 extension Notice: FlightProtocol {
     
     var title: String {
