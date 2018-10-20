@@ -88,6 +88,6 @@ extension Event: FlightProtocol {
     }
     
     var colorText: UIColor {
-        return .lightGray
+        return .white
     }
 }
