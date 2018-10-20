@@ -37,6 +37,7 @@ class FlightListViewController: BaseViewController {
     
     private func makeRefreshControl() {
         refreshControl.addTarget(self, action: #selector(fetchItems), for: .valueChanged)
+        refreshControl.tintColor = .white
         if #available(iOS 10.0, *) {
             tableView.refreshControl = refreshControl
         } else {
