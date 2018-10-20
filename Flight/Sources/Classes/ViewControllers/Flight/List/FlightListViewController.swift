@@ -46,7 +46,12 @@ class FlightListViewController: BaseViewController {
     }
     
     private func makeToolbar() {
-        self.title = ""
+        let navigationTitleFont = UIFont.boldSystemFont(ofSize: 21)
+        self.navigationController?.navigationBar.titleTextAttributes = [
+            NSAttributedString.Key.font: navigationTitleFont,
+            NSAttributedString.Key.foregroundColor: UIColor.white
+        ]
+        self.title = "flight_navigation_bar_title".localized()
     }
     
     @objc private func fetchItems() {
