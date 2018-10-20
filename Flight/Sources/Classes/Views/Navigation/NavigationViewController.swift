@@ -14,6 +14,10 @@ class NavigationViewController: UINavigationController {
         super.init(coder: aDecoder)
     }
     
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+    
     init(controller: UIViewController, color: UIColor = .white) {
         super.init(rootViewController: controller)
         self.navigationBar.isTranslucent = false
