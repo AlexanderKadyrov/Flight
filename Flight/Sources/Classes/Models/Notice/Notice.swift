@@ -20,7 +20,13 @@ extension Notice: FlightProtocol {
     }
     
     var subtitle: String {
-        guard let date = flightDate else { return "" }
-        return date.toString(.formatterDate)
+        var values = [String]()
+        if let thisFlightDate = flightDate {
+            values.append(thisFlightDate.toString(.formatterDate))
+        }
+        if let thisGate = gate, !thisGate.isEmpty {
+            values.append(thisGate)
+        }
+        return values.joined(separator: "\n")
     }
 }
