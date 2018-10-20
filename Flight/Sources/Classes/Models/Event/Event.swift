@@ -8,9 +8,24 @@
 
 import Foundation
 
+enum Airline: String {
+    case uralairlines
+    case transaero
+    case aeroflot
+    case redwings
+    case nordstar
+    case pegasfly
+    case openair
+    case kolavia
+    case pobeda
+    case utair
+    case s7
+}
+
 class Event {
     var startTime: Date?
     var endTime: Date?
+    var airline: Airline!
     var name: String!
 }
 

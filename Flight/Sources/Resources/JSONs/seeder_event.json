@@ -2,67 +2,67 @@
     {
         "startTime": "20-10-2018 09:00:00",
         "endTime": "20-10-2018 14:00:00",
-        "name": "Аэрофлот",
-        "type": "aeroflot"
+        "airline": "aeroflot",
+        "name": "Аэрофлот"
     },
     {
         "startTime": "21-11-2018 14:00:00",
         "endTime": "21-11-2018 18:07:00",
-        "name": "Уральские авиалинии",
-        "type": "uralairlines"
+        "airline": "uralairlines",
+        "name": "Уральские авиалинии"
     },
     {
         "startTime": "20-10-2018 23:00:00",
         "endTime": "21-10-2018 07:30:00",
-        "name": "Победа",
-        "type": "pobeda"
+        "airline": "pobeda",
+        "name": "Победа"
     },
     {
         "startTime": "07-11-2018 09:15:00",
         "endTime": "07-11-2018 12:05:00",
-        "name": "S7 Airlines",
-        "type": "s7"
+        "airline": "s7",
+        "name": "S7 Airlines"
     },
     {
         "startTime": "01-01-2019 00:00:00",
         "endTime": "00-01-2019 05:45:00",
-        "name": "Оренбургские авиалинии",
-        "type": "openair"
+        "airline": "openair",
+        "name": "Оренбургские авиалинии"
     },
     {
         "startTime": "05-05-2019 01:00:00",
         "endTime": "05-05-2019 07:00:00",
-        "name": "Трансаэро",
-        "type": "transaero"
+        "airline": "transaero",
+        "name": "Трансаэро"
     },
     {
         "startTime": "05-12-2018 23:00:00",
         "endTime": "06-12-2018 03:55:00",
-        "name": "Ред Вингс",
-        "type": "redwings"
+        "airline": "redwings",
+        "name": "Ред Вингс"
     },
     {
         "startTime": "21-03-2019 04:15:00",
         "endTime": "21-03-2019 08:15:45",
-        "name": "Нордстар",
-        "type": "nordstar"
+        "airline": "nordstar",
+        "name": "Нордстар"
     },
     {
         "startTime": "25-11-2018 18:00:00",
         "endTime": "25-11-2018 23:05:00",
-        "name": "Икар",
-        "type": "pegasfly"
+        "airline": "pegasfly",
+        "name": "Икар"
     },
     {
         "startTime": "01-03-2019 22:10:00",
         "endTime": "02-10-2019 03:05:35",
-        "name": "Ютейр",
-        "type": "utair"
+        "airline": "utair",
+        "name": "Ютейр"
     },
     {
         "startTime": "03-04-2019 20:15:00",
         "endTime": "03-04-2019 22:25:00",
-        "name": "Метроджет",
-        "type": "kolavia"
+        "airline": "kolavia",
+        "name": "Метроджет"
     },
 ]
