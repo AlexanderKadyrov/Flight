@@ -8,7 +8,9 @@
 
 import Foundation
 
-enum Airline: String {
+fileprivate let dateFormatEvent = "dd-MM-yyyy HH:mm:ss"
+
+enum Airline: String, Codable {
     case uralairlines
     case transaero
     case aeroflot
@@ -22,11 +24,42 @@ enum Airline: String {
     case s7
 }
 
-class Event {
+class Event: Codable {
+    
     var startTime: Date?
     var endTime: Date?
     var airline: Airline!
     var name: String!
+    
+    enum CodingKeys: String, CodingKey {
+        case startTime
+        case endTime
+        case airline
+        case name
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        
+        let stringStartTime = try values.decode(String.self, forKey: .startTime)
+        startTime = Date.with(value: stringStartTime, format: dateFormatEvent)
+        
+        let stringEndTime = try values.decode(String.self, forKey: .endTime)
+        endTime = Date.with(value: stringEndTime, format: dateFormatEvent)
+        
+        let stringAirline = try values.decode(String.self, forKey: .airline)
+        airline = Airline(rawValue: stringAirline)
+        
+        name = try values.decode(String.self, forKey: .name)
+    }
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(startTime, forKey: .startTime)
+        try container.encode(endTime, forKey: .endTime)
+        try container.encode(airline, forKey: .airline)
+        try container.encode(name, forKey: .name)
+    }
 }
 
 extension Event: FlightProtocol {
