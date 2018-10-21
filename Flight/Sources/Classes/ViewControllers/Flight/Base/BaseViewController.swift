@@ -17,4 +17,13 @@ class BaseViewController: UIViewController {
     init() {
         super.init(nibName: String(describing: type(of: self)), bundle: nil)
     }
+    
+    func setBarTitle(_ text: String) {
+        let navigationTitleFont = UIFont.boldSystemFont(ofSize: 21)
+        self.navigationController?.navigationBar.titleTextAttributes = [
+            NSAttributedString.Key.font: navigationTitleFont,
+            NSAttributedString.Key.foregroundColor: UIColor.white
+        ]
+        self.title = text + " " + "App"
+    }
 }
