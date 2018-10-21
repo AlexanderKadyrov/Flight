@@ -66,6 +66,24 @@ extension FlightListViewController: UITableViewDelegate {
     internal func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension // <- выставляем автоматическую высоту
     }
+    
+    //отслеживаем нажатие на ячейку
+    internal func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let item = items[indexPath.row]
+        if item is Notice {
+            let vc = NoticeDetailViewController()
+            vc.item = item as? Notice
+            navigationController?.pushViewController(vc, animated: true)
+        } else if item is Event {
+            let vc = EventDetailViewController()
+            vc.item = item as? Event
+            navigationController?.pushViewController(vc, animated: true)
+        } else if item is Move {
+            let vc = MoveDetailViewController()
+            vc.item = item as? Move
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
 }
 
 extension FlightListViewController: UITableViewDataSource {
