@@ -23,7 +23,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqF-pJ-lxn" userLabel="labelTitle">
-                    <rect key="frame" x="90" y="90" width="140" height="140"/>
+                    <rect key="frame" x="90" y="106" width="140" height="140"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="140" id="Sgh-5d-LJn"/>
                         <constraint firstAttribute="height" constant="140" id="llc-J0-rok"/>
@@ -33,7 +33,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxM-Ds-tpw" userLabel="labelSubtitle">
-                    <rect key="frame" x="16" y="238" width="288" height="40"/>
+                    <rect key="frame" x="16" y="254" width="288" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="vkc-P2-blD"/>
                     </constraints>
@@ -47,7 +47,7 @@
                 <constraint firstItem="3nN-UR-YU3" firstAttribute="trailing" secondItem="oxM-Ds-tpw" secondAttribute="trailing" constant="16" id="EJP-9A-Sex"/>
                 <constraint firstItem="qqF-pJ-lxn" firstAttribute="centerX" secondItem="Jgl-nw-2UH" secondAttribute="centerX" id="bGj-oI-EYB"/>
                 <constraint firstItem="oxM-Ds-tpw" firstAttribute="leading" secondItem="3nN-UR-YU3" secondAttribute="leading" constant="16" id="bvZ-pR-BR4"/>
-                <constraint firstItem="qqF-pJ-lxn" firstAttribute="centerY" secondItem="Jgl-nw-2UH" secondAttribute="centerY" constant="-80" id="k7Y-wv-jVb"/>
+                <constraint firstItem="qqF-pJ-lxn" firstAttribute="centerY" secondItem="Jgl-nw-2UH" secondAttribute="centerY" constant="-64" id="k7Y-wv-jVb"/>
                 <constraint firstItem="oxM-Ds-tpw" firstAttribute="top" secondItem="qqF-pJ-lxn" secondAttribute="bottom" constant="8" id="uLn-mE-YNL"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="3nN-UR-YU3"/>
