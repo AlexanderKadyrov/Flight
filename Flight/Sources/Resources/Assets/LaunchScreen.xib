@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_airplane" translatesAutoresizingMaskIntoConstraints="NO" id="h1u-3q-qCo">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_airplane_big" translatesAutoresizingMaskIntoConstraints="NO" id="h1u-3q-qCo">
                     <rect key="frame" x="10" y="90" width="300" height="300"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
@@ -35,6 +35,6 @@
         </view>
     </objects>
     <resources>
-        <image name="icon_airplane" width="256" height="256"/>
+        <image name="icon_airplane_big" width="256" height="256"/>
     </resources>
 </document>
