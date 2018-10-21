@@ -14,6 +14,8 @@
 		113A250D217BEAD300AB90B9 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A250C217BEAD300AB90B9 /* NavigationViewController.swift */; };
 		113A2511217BEDB600AB90B9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 113A2513217BEDB600AB90B9 /* Localizable.strings */; };
 		113A2518217BEEEC00AB90B9 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A2517217BEEEC00AB90B9 /* String+Extension.swift */; };
+		113A251D217C6C5100AB90B9 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A251C217C6C5000AB90B9 /* EventDetailViewController.swift */; };
+		113A251F217C6D5200AB90B9 /* EventDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113A251E217C6D5200AB90B9 /* EventDetailViewController.xib */; };
 		115E3138217B2D1500357D6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E3137217B2D1500357D6D /* AppDelegate.swift */; };
 		115E313F217B2D1600357D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115E313E217B2D1600357D6D /* Assets.xcassets */; };
 		115E314D217B2D1600357D6D /* FlightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E314C217B2D1600357D6D /* FlightTests.swift */; };
@@ -62,6 +64,8 @@
 		113A2514217BEDC200AB90B9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		113A2515217BEDD200AB90B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		113A2517217BEEEC00AB90B9 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		113A251C217C6C5000AB90B9 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
+		113A251E217C6D5200AB90B9 /* EventDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventDetailViewController.xib; sourceTree = "<group>"; };
 		115E3134217B2D1500357D6D /* Flight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		115E3137217B2D1500357D6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		115E313E217B2D1600357D6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -144,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				115E316D217B2E6000357D6D /* Flight */,
+				113A251A217C6C1700AB90B9 /* Event */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -170,6 +175,23 @@
 				113A2517217BEEEC00AB90B9 /* String+Extension.swift */,
 			);
 			path = String;
+			sourceTree = "<group>";
+		};
+		113A251A217C6C1700AB90B9 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				113A251B217C6C2900AB90B9 /* Detail */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		113A251B217C6C2900AB90B9 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				113A251C217C6C5000AB90B9 /* EventDetailViewController.swift */,
+				113A251E217C6D5200AB90B9 /* EventDetailViewController.xib */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		115E312B217B2D1500357D6D = {
@@ -533,6 +555,7 @@
 			files = (
 				115E3198217B586200357D6D /* FlightListViewController.xib in Resources */,
 				113A2503217BCFB600AB90B9 /* FlightListTableViewCell.xib in Resources */,
+				113A251F217C6D5200AB90B9 /* EventDetailViewController.xib in Resources */,
 				115E3193217B3E8F00357D6D /* seeder_move.json in Resources */,
 				113A2511217BEDB600AB90B9 /* Localizable.strings in Resources */,
 				115E3191217B3E6E00357D6D /* seeder_event.json in Resources */,
@@ -563,6 +586,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				115E3185217B325500357D6D /* DateFormatter+Extension.swift in Sources */,
+				113A251D217C6C5100AB90B9 /* EventDetailViewController.swift in Sources */,
 				115E318B217B3AD700357D6D /* TimeInterval+Extension.swift in Sources */,
 				115E3138217B2D1500357D6D /* AppDelegate.swift in Sources */,
 				113A250D217BEAD300AB90B9 /* NavigationViewController.swift in Sources */,
