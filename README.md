@@ -10,9 +10,9 @@
 
 ## Типы данных в приложении
 
-struct Notice
-class Event
-class Move
+* struct Notice
+* class Event
+* class Move
 
 # Инструменты
 
@@ -23,25 +23,25 @@ class Move
 
 В проекте используются такие элементы, как:
 
-UIViewController
-JSONDecoder
-DateFormatter
-UIImageView
-TimeInterval
-UITableView
-Extensions
-UIButton
-UIImage
-Protocol
-UILabel
-UIColor
-UIview
-Assets
-JSONs
-String
-XIBs
-Data
-Date
+* UIViewController
+* JSONDecoder
+* DateFormatter
+* UIImageView
+* TimeInterval
+* UITableView
+* Extensions
+* UIButton
+* UIImage
+* Protocol
+* UILabel
+* UIColor
+* UIview
+* Assets
+* JSONs
+* String
+* XIBs
+* Data
+* Date
 
 И другие...
 
