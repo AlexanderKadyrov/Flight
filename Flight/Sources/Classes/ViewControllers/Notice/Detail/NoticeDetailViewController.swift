@@ -17,6 +17,6 @@ class NoticeDetailViewController: FlightDetailViewController {
     }
     
     private func makeToolbar() {
-        setBarTitle(String(describing: type(of: item)))
+        setBarTitle(String(describing: type(of: Notice.self)))
     }
 }
