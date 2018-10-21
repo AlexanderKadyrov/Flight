@@ -17,16 +17,18 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_airplane" translatesAutoresizingMaskIntoConstraints="NO" id="h1u-3q-qCo">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <rect key="frame" x="10" y="90" width="300" height="300"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="5vb-2o-yoF"/>
+                        <constraint firstAttribute="width" constant="300" id="k82-6t-5D6"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="0.19215686274509802" green="0.22352941176470587" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="h1u-3q-qCo" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="hcq-c3-1tP"/>
-                <constraint firstItem="h1u-3q-qCo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jUd-fq-bH8"/>
-                <constraint firstItem="h1u-3q-qCo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="noL-ck-gTy"/>
-                <constraint firstItem="h1u-3q-qCo" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="wfS-sY-e2B"/>
+                <constraint firstItem="h1u-3q-qCo" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="uim-Hg-dJ2"/>
+                <constraint firstItem="h1u-3q-qCo" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="zDd-jW-6nc"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="63.75" y="67.5"/>
