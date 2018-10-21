@@ -12,8 +12,8 @@ class EventDetailViewController: FlightDetailViewController {
     
     @IBOutlet weak var viewContent: UIView!
     @IBOutlet weak var imageViewLogo: UIImageView!
-    @IBOutlet private weak var labelTitle: UILabel!
-    @IBOutlet private weak var labelSubtitle: UILabel!
+    @IBOutlet private weak var labelStartTime: UILabel!
+    @IBOutlet private weak var labelEndTime: UILabel!
     
     //настраиваем стили и/или логику
     override func viewDidLoad() {
@@ -44,5 +44,11 @@ class EventDetailViewController: FlightDetailViewController {
         guard let thisItem = item as? Event else { return }
         let nameLogo = "icon_logo_" + thisItem.airline.rawValue
         imageViewLogo.image = UIImage(named: nameLogo)
+        if let thisStartTime = thisItem.startTime {
+            labelStartTime.text = thisStartTime.toString(.formatterTime)
+        }
+        if let thisEndTime = thisItem.endTime {
+            labelEndTime.text = thisEndTime.toString(.formatterTime)
+        }
     }
 }
