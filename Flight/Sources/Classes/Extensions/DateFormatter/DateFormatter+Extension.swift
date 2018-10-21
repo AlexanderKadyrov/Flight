@@ -12,7 +12,7 @@ extension DateFormatter {
     
     static var formatterDate: DateFormatter {
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd"
+        formatter.dateFormat = "dd MMMM yyyy"
         return formatter
     }
     
