@@ -20,6 +20,7 @@
 		113A2525217C6E2300AB90B9 /* NoticeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113A2524217C6E2300AB90B9 /* NoticeDetailViewController.xib */; };
 		113A2529217C6EF500AB90B9 /* MoveDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A2528217C6EF500AB90B9 /* MoveDetailViewController.swift */; };
 		113A252B217C6F4A00AB90B9 /* MoveDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113A252A217C6F4A00AB90B9 /* MoveDetailViewController.xib */; };
+		113A252E217C727E00AB90B9 /* FlightDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A252D217C727E00AB90B9 /* FlightDetailViewController.swift */; };
 		115E3138217B2D1500357D6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E3137217B2D1500357D6D /* AppDelegate.swift */; };
 		115E313F217B2D1600357D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115E313E217B2D1600357D6D /* Assets.xcassets */; };
 		115E314D217B2D1600357D6D /* FlightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E314C217B2D1600357D6D /* FlightTests.swift */; };
@@ -74,6 +75,7 @@
 		113A2524217C6E2300AB90B9 /* NoticeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoticeDetailViewController.xib; sourceTree = "<group>"; };
 		113A2528217C6EF500AB90B9 /* MoveDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveDetailViewController.swift; sourceTree = "<group>"; };
 		113A252A217C6F4A00AB90B9 /* MoveDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoveDetailViewController.xib; sourceTree = "<group>"; };
+		113A252D217C727E00AB90B9 /* FlightDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailViewController.swift; sourceTree = "<group>"; };
 		115E3134217B2D1500357D6D /* Flight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		115E3137217B2D1500357D6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		115E313E217B2D1600357D6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -238,6 +240,14 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
+		113A252C217C725400AB90B9 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				113A252D217C727E00AB90B9 /* FlightDetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		115E312B217B2D1500357D6D = {
 			isa = PBXGroup;
 			children = (
@@ -345,6 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				115E316E217B2E6F00357D6D /* List */,
+				113A252C217C725400AB90B9 /* Detail */,
 				115E3194217B57BC00357D6D /* Base */,
 			);
 			path = Flight;
@@ -649,6 +660,7 @@
 				113A2509217BEA0800AB90B9 /* UIImage+Extension.swift in Sources */,
 				115E317B217B2F1E00357D6D /* Event.swift in Sources */,
 				115E319F217B640800357D6D /* JSONDecoder+Extension.swift in Sources */,
+				113A252E217C727E00AB90B9 /* FlightDetailViewController.swift in Sources */,
 				113A2529217C6EF500AB90B9 /* MoveDetailViewController.swift in Sources */,
 				115E3174217B2EC300357D6D /* FlightController.swift in Sources */,
 				115E3181217B316600357D6D /* FlightProtocol.swift in Sources */,
