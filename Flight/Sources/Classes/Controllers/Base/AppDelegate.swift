@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let nv = NavigationViewController(vc, color: .colorOnyx)
         window?.rootViewController = nv
         window?.makeKeyAndVisible()
+        window?.tintColor = .white
         return true
     }
 }
