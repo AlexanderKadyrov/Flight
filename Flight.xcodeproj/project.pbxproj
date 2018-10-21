@@ -21,6 +21,7 @@
 		113A2529217C6EF500AB90B9 /* MoveDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A2528217C6EF500AB90B9 /* MoveDetailViewController.swift */; };
 		113A252B217C6F4A00AB90B9 /* MoveDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113A252A217C6F4A00AB90B9 /* MoveDetailViewController.xib */; };
 		113A252E217C727E00AB90B9 /* FlightDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A252D217C727E00AB90B9 /* FlightDetailViewController.swift */; };
+		113A2530217C7C9300AB90B9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113A252F217C7C9300AB90B9 /* LaunchScreen.xib */; };
 		115E3138217B2D1500357D6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E3137217B2D1500357D6D /* AppDelegate.swift */; };
 		115E313F217B2D1600357D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115E313E217B2D1600357D6D /* Assets.xcassets */; };
 		115E314D217B2D1600357D6D /* FlightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E314C217B2D1600357D6D /* FlightTests.swift */; };
@@ -76,6 +77,7 @@
 		113A2528217C6EF500AB90B9 /* MoveDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveDetailViewController.swift; sourceTree = "<group>"; };
 		113A252A217C6F4A00AB90B9 /* MoveDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoveDetailViewController.xib; sourceTree = "<group>"; };
 		113A252D217C727E00AB90B9 /* FlightDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailViewController.swift; sourceTree = "<group>"; };
+		113A252F217C7C9300AB90B9 /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		115E3134217B2D1500357D6D /* Flight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		115E3137217B2D1500357D6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		115E313E217B2D1600357D6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -464,6 +466,7 @@
 		115E318C217B3DFE00357D6D /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				113A252F217C7C9300AB90B9 /* LaunchScreen.xib */,
 				115E313E217B2D1600357D6D /* Assets.xcassets */,
 			);
 			path = Assets;
@@ -617,6 +620,7 @@
 				115E3191217B3E6E00357D6D /* seeder_event.json in Resources */,
 				113A2525217C6E2300AB90B9 /* NoticeDetailViewController.xib in Resources */,
 				115E313F217B2D1600357D6D /* Assets.xcassets in Resources */,
+				113A2530217C7C9300AB90B9 /* LaunchScreen.xib in Resources */,
 				115E318F217B3E4100357D6D /* seeder_notice.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
