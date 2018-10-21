@@ -68,17 +68,18 @@ extension FlightListViewController: UITableViewDelegate {
         let item = items[indexPath.row]
         if item is Notice {
             let vc = NoticeDetailViewController()
-            vc.item = item as? Notice
+            vc.item = item
             navigationController?.pushViewController(vc, animated: true)
         } else if item is Event {
             let vc = EventDetailViewController()
-            vc.item = item as? Event
+            vc.item = item
             navigationController?.pushViewController(vc, animated: true)
         } else if item is Move {
             let vc = MoveDetailViewController()
-            vc.item = item as? Move
+            vc.item = item
             navigationController?.pushViewController(vc, animated: true)
         }
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
