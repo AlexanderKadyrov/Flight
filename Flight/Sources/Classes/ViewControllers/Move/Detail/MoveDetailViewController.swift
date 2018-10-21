@@ -13,12 +13,14 @@ class MoveDetailViewController: FlightDetailViewController {
     
     @IBOutlet private weak var viewContainerAirplaneTakeoff: UIView!
     @IBOutlet private weak var viewContainerAirplaneLanding: UIView!
+    @IBOutlet private weak var labelTime: UILabel!
     
     //настраиваем стили и/или логику
     override func viewDidLoad() {
         super.viewDidLoad()
         makeToolbar()
         makeItems()
+        setData()
     }
     
     private func makeToolbar() {
@@ -34,5 +36,12 @@ class MoveDetailViewController: FlightDetailViewController {
         viewContainerAirplaneLanding.backgroundColor = .colorOnyx
         viewContainerAirplaneLanding.layer.cornerRadius = 38
         viewContainerAirplaneLanding.layer.borderWidth = 3
+    }
+    
+    private func setData() {
+        guard let thisItem = item as? Move else { return }
+        if let thisEstimateTime = thisItem.estimateTime {
+            labelTime.text = thisEstimateTime.toString
+        }
     }
 }

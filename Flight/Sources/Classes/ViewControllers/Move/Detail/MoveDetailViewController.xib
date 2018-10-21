@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoveDetailViewController" customModule="Flight" customModuleProvider="target">
             <connections>
+                <outlet property="labelTime" destination="gki-F2-6Wd" id="MKC-V2-Zlx"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Z5t-Tp-aU5"/>
                 <outlet property="viewContainerAirplaneLanding" destination="6LE-Jw-fLp" id="FsU-FI-Sxg"/>
                 <outlet property="viewContainerAirplaneTakeoff" destination="vvt-gM-7iH" id="JFe-1z-ReW"/>
@@ -85,13 +86,25 @@
                                 <constraint firstItem="moQ-Aq-l7Q" firstAttribute="centerY" secondItem="6LE-Jw-fLp" secondAttribute="centerY" id="os8-db-Hjx"/>
                             </constraints>
                         </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gki-F2-6Wd" userLabel="labelTime">
+                            <rect key="frame" x="20" y="69" width="280" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="qhh-sC-lWw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="vvt-gM-7iH" firstAttribute="leading" secondItem="gwb-Bn-Zfm" secondAttribute="leading" constant="20" id="1kZ-00-vE5"/>
                         <constraint firstAttribute="height" constant="116" id="BJw-IJ-hZc"/>
+                        <constraint firstItem="gki-F2-6Wd" firstAttribute="top" secondItem="kzr-3Y-AY0" secondAttribute="bottom" constant="3" id="DwR-aG-1al"/>
                         <constraint firstAttribute="trailing" secondItem="6LE-Jw-fLp" secondAttribute="trailing" constant="20" id="GdU-KU-aCj"/>
                         <constraint firstAttribute="trailing" secondItem="us9-RA-x6s" secondAttribute="trailing" constant="20" id="HIU-l2-0XT"/>
+                        <constraint firstAttribute="trailing" secondItem="gki-F2-6Wd" secondAttribute="trailing" constant="20" id="VCU-LJ-fcO"/>
+                        <constraint firstItem="gki-F2-6Wd" firstAttribute="leading" secondItem="gwb-Bn-Zfm" secondAttribute="leading" constant="20" id="ZdY-3Q-3I0"/>
                         <constraint firstItem="vvt-gM-7iH" firstAttribute="centerY" secondItem="gwb-Bn-Zfm" secondAttribute="centerY" id="ZlV-bH-Xhe"/>
                         <constraint firstItem="kzr-3Y-AY0" firstAttribute="centerY" secondItem="gwb-Bn-Zfm" secondAttribute="centerY" id="hdG-g4-G8f"/>
                         <constraint firstItem="kzr-3Y-AY0" firstAttribute="centerX" secondItem="gwb-Bn-Zfm" secondAttribute="centerX" id="iZW-ne-H4x"/>
