@@ -6,4 +6,11 @@
   Copyright © 2018 Alexander Kadyrov. All rights reserved.
 */
 
+//Flight
+
 "flight_navigation_bar_title" = "Flight";
+
+//Event
+
+"event_start_time_title" = "Departure";
+"event_end_time_title" = "Landing";

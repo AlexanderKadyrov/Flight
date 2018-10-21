@@ -45,10 +45,10 @@ class EventDetailViewController: FlightDetailViewController {
         let nameLogo = "icon_logo_" + thisItem.airline.rawValue
         imageViewLogo.image = UIImage(named: nameLogo)
         if let thisStartTime = thisItem.startTime {
-            labelStartTime.text = thisStartTime.toString(.formatterTime)
+            labelStartTime.text = "event_start_time_title".localized() + ": " + thisStartTime.toString(.formatterTime)
         }
         if let thisEndTime = thisItem.endTime {
-            labelEndTime.text = thisEndTime.toString(.formatterTime)
+            labelEndTime.text = "event_end_time_title".localized() + ": " + thisEndTime.toString(.formatterTime)
         }
     }
 }
