@@ -8,9 +8,7 @@
 
 import Foundation
 
-class MoveDetailViewController: BaseViewController {
-    
-    var item: Move!
+class MoveDetailViewController: FlightDetailViewController {
     
     //настраиваем стили и/или логику
     override func viewDidLoad() {

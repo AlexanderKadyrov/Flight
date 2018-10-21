@@ -8,9 +8,7 @@
 
 import Foundation
 
-class NoticeDetailViewController: BaseViewController {
-    
-    var item: Notice!
+class NoticeDetailViewController: FlightDetailViewController {
     
     //настраиваем стили и/или логику
     override func viewDidLoad() {

@@ -8,9 +8,7 @@
 
 import UIKit
 
-class EventDetailViewController: BaseViewController {
-    
-    var item: Event!
+class EventDetailViewController: FlightDetailViewController {
     
     //настраиваем стили и/или логику
     override func viewDidLoad() {
