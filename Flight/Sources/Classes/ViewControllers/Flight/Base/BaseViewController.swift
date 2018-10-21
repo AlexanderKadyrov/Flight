@@ -18,6 +18,12 @@ class BaseViewController: UIViewController {
         super.init(nibName: String(describing: type(of: self)), bundle: nil)
     }
     
+    //настраиваем стили и/или логику
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .colorOnyx
+    }
+    
     func setBarTitle(_ text: String) {
         let navigationTitleFont = UIFont.boldSystemFont(ofSize: 21)
         self.navigationController?.navigationBar.titleTextAttributes = [
