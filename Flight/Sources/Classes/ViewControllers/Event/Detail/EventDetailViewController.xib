@@ -12,6 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventDetailViewController" customModule="Flight" customModuleProvider="target">
             <connections>
+                <outlet property="labelSubtitle" destination="RMp-nk-0mv" id="DnO-wk-O6b"/>
+                <outlet property="labelTitle" destination="iXq-yu-tyT" id="nw4-HO-N5G"/>
                 <outlet property="view" destination="iN0-l3-epB" id="9QD-fL-NO2"/>
             </connections>
         </placeholder>
@@ -19,8 +21,45 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXq-yu-tyT" userLabel="labelTitle">
+                    <rect key="frame" x="90" y="90" width="140" height="140"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="DuW-S5-m5n"/>
+                        <constraint firstAttribute="height" constant="140" id="xwu-ct-1l7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="51"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="70"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01.01.2019" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMp-nk-0mv" userLabel="labelSubtitle">
+                    <rect key="frame" x="16" y="238" width="288" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="LCQ-DI-bfi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="iXq-yu-tyT" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-80" id="7SG-UT-yb3"/>
+                <constraint firstItem="RMp-nk-0mv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="PWB-Ef-RHm"/>
+                <constraint firstItem="iXq-yu-tyT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PeU-e3-Kys"/>
+                <constraint firstItem="RMp-nk-0mv" firstAttribute="top" secondItem="iXq-yu-tyT" secondAttribute="bottom" constant="8" id="oCJ-8d-WGK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RMp-nk-0mv" secondAttribute="trailing" constant="16" id="vg3-ge-PHu"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="63.75" y="67.5"/>
         </view>
     </objects>
 </document>
