@@ -12,7 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoveDetailViewController" customModule="Flight" customModuleProvider="target">
             <connections>
+                <outlet property="labelFromPlace" destination="n0B-Cd-E4X" id="hYN-4F-7sa"/>
                 <outlet property="labelTime" destination="gki-F2-6Wd" id="MKC-V2-Zlx"/>
+                <outlet property="labelToPlace" destination="o4D-9y-aC7" id="eJz-ee-zby"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Z5t-Tp-aU5"/>
                 <outlet property="viewContainerAirplaneLanding" destination="6LE-Jw-fLp" id="FsU-FI-Sxg"/>
                 <outlet property="viewContainerAirplaneTakeoff" destination="vvt-gM-7iH" id="JFe-1z-ReW"/>
@@ -24,7 +26,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gwb-Bn-Zfm" userLabel="viewContainer">
-                    <rect key="frame" x="0.0" y="182" width="320" height="116"/>
+                    <rect key="frame" x="0.0" y="142" width="320" height="116"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="us9-RA-x6s" userLabel="viewLine">
                             <rect key="frame" x="20" y="56" width="280" height="4"/>
@@ -113,12 +115,36 @@
                         <constraint firstItem="us9-RA-x6s" firstAttribute="centerY" secondItem="gwb-Bn-Zfm" secondAttribute="centerY" id="qcy-0m-5t6"/>
                     </constraints>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0B-Cd-E4X" userLabel="labelFromPlace">
+                    <rect key="frame" x="20" y="98" width="280" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Gje-p0-mPN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4D-9y-aC7" userLabel="labelToPlace">
+                    <rect key="frame" x="20" y="258" width="280" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="7i0-QG-aKE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
             <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="n0B-Cd-E4X" secondAttribute="trailing" constant="20" id="2YG-qL-9mW"/>
+                <constraint firstItem="n0B-Cd-E4X" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Lvp-TL-1v4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="o4D-9y-aC7" secondAttribute="trailing" constant="20" id="MuO-U4-iLb"/>
+                <constraint firstItem="gwb-Bn-Zfm" firstAttribute="top" secondItem="n0B-Cd-E4X" secondAttribute="bottom" id="NFd-ye-woh"/>
                 <constraint firstItem="gwb-Bn-Zfm" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="NeE-3U-zRY"/>
                 <constraint firstItem="gwb-Bn-Zfm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="VXB-aR-EKL"/>
-                <constraint firstItem="gwb-Bn-Zfm" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Won-Cx-87H"/>
+                <constraint firstItem="gwb-Bn-Zfm" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-40" id="Won-Cx-87H"/>
+                <constraint firstItem="o4D-9y-aC7" firstAttribute="top" secondItem="gwb-Bn-Zfm" secondAttribute="bottom" id="jjB-XH-yCc"/>
+                <constraint firstItem="o4D-9y-aC7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="nC3-Gy-4eU"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="138.75" y="155"/>

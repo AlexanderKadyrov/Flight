@@ -13,6 +13,8 @@ class MoveDetailViewController: FlightDetailViewController {
     
     @IBOutlet private weak var viewContainerAirplaneTakeoff: UIView!
     @IBOutlet private weak var viewContainerAirplaneLanding: UIView!
+    @IBOutlet private weak var labelFromPlace: UILabel!
+    @IBOutlet private weak var labelToPlace: UILabel!
     @IBOutlet private weak var labelTime: UILabel!
     
     //настраиваем стили и/или логику
@@ -28,11 +30,11 @@ class MoveDetailViewController: FlightDetailViewController {
     }
     
     private func makeItems() {
-        viewContainerAirplaneTakeoff.layer.borderColor = UIColor.white.cgColor
+        viewContainerAirplaneTakeoff.layer.borderColor = UIColor.colorBrilliantAzure.cgColor
         viewContainerAirplaneTakeoff.backgroundColor = .colorOnyx
         viewContainerAirplaneTakeoff.layer.cornerRadius = 38
         viewContainerAirplaneTakeoff.layer.borderWidth = 3
-        viewContainerAirplaneLanding.layer.borderColor = UIColor.white.cgColor
+        viewContainerAirplaneLanding.layer.borderColor = UIColor.colorBrilliantAzure.cgColor
         viewContainerAirplaneLanding.backgroundColor = .colorOnyx
         viewContainerAirplaneLanding.layer.cornerRadius = 38
         viewContainerAirplaneLanding.layer.borderWidth = 3
@@ -40,6 +42,12 @@ class MoveDetailViewController: FlightDetailViewController {
     
     private func setData() {
         guard let thisItem = item as? Move else { return }
+        if let thisFromPlace = thisItem.fromPlace, !thisFromPlace.isEmpty {
+            labelFromPlace.text = thisFromPlace
+        }
+        if let thisToPlace = thisItem.toPlace, !thisToPlace.isEmpty {
+            labelToPlace.text = thisToPlace
+        }
         if let thisEstimateTime = thisItem.estimateTime {
             labelTime.text = thisEstimateTime.toString
         }
