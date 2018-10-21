@@ -29,6 +29,7 @@ class EventDetailViewController: FlightDetailViewController {
     }
     
     private func makeItems() {
+        
         viewContent.layer.borderColor = UIColor.white.cgColor
         viewContent.layer.cornerRadius = 140
         viewContent.layer.borderWidth = 5
