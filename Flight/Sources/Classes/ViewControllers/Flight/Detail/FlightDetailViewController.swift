@@ -16,8 +16,4 @@ class FlightDetailViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    internal override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
 }

@@ -54,10 +54,6 @@ class FlightListViewController: BaseViewController {
         tableView.reloadData()
         refreshControl.endRefreshing()
     }
-    
-    internal override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
 }
 
 extension FlightListViewController: UITableViewDelegate {
