@@ -17,6 +17,6 @@ class EventDetailViewController: FlightDetailViewController {
     }
     
     private func makeToolbar() {
-        setBarTitle(String(describing: type(of: Event.self)))
+        setBarTitle("Event")
     }
 }

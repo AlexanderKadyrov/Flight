@@ -17,6 +17,6 @@ class MoveDetailViewController: FlightDetailViewController {
     }
     
     private func makeToolbar() {
-        setBarTitle(String(describing: type(of: Move.self)))
+        setBarTitle("Move")
     }
 }
