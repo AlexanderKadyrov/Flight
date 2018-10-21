@@ -24,6 +24,6 @@ class BaseViewController: UIViewController {
             NSAttributedString.Key.font: navigationTitleFont,
             NSAttributedString.Key.foregroundColor: UIColor.white
         ]
-        self.title = text + " " + "App"
+        self.title = text
     }
 }
