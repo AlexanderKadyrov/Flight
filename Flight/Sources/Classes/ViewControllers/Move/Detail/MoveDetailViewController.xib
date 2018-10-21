@@ -115,7 +115,7 @@
                         <constraint firstItem="us9-RA-x6s" firstAttribute="centerY" secondItem="gwb-Bn-Zfm" secondAttribute="centerY" id="qcy-0m-5t6"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0B-Cd-E4X" userLabel="labelFromPlace">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0B-Cd-E4X" userLabel="labelFromPlace">
                     <rect key="frame" x="20" y="98" width="280" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="Gje-p0-mPN"/>
@@ -124,7 +124,7 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4D-9y-aC7" userLabel="labelToPlace">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4D-9y-aC7" userLabel="labelToPlace">
                     <rect key="frame" x="20" y="258" width="280" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="7i0-QG-aKE"/>
