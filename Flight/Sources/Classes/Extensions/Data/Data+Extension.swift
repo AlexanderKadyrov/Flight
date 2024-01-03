@@ -14,7 +14,7 @@ extension Data {
         case resourceNotFound
     }
     
-    static func resource(_ name: String) throws -> Data {
+    static func resource(name: String) throws -> Data {
         guard
             let url = Bundle.main.url(forResource: name, withExtension: "json")
         else {
