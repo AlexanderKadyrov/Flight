@@ -20,6 +20,7 @@
 		113A252E217C727E00AB90B9 /* FlightDetailViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A252D217C727E00AB90B9 /* FlightDetailViewControllerProtocol.swift */; };
 		113A2530217C7C9300AB90B9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113A252F217C7C9300AB90B9 /* LaunchScreen.xib */; };
 		114427B82B4625560044DEBE /* AirplaneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114427B72B4625560044DEBE /* AirplaneView.swift */; };
+		114427BC2B4629A70044DEBE /* MoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114427BB2B4629A70044DEBE /* MoveView.swift */; };
 		115E3138217B2D1500357D6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E3137217B2D1500357D6D /* AppDelegate.swift */; };
 		115E313F217B2D1600357D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115E313E217B2D1600357D6D /* Assets.xcassets */; };
 		115E314D217B2D1600357D6D /* FlightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E314C217B2D1600357D6D /* FlightTests.swift */; };
@@ -73,6 +74,7 @@
 		113A252D217C727E00AB90B9 /* FlightDetailViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailViewControllerProtocol.swift; sourceTree = "<group>"; };
 		113A252F217C7C9300AB90B9 /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		114427B72B4625560044DEBE /* AirplaneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirplaneView.swift; sourceTree = "<group>"; };
+		114427BB2B4629A70044DEBE /* MoveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveView.swift; sourceTree = "<group>"; };
 		115E3134217B2D1500357D6D /* Flight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		115E3137217B2D1500357D6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		115E313E217B2D1600357D6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -249,6 +251,14 @@
 			path = AirplaneView;
 			sourceTree = "<group>";
 		};
+		114427BA2B46298D0044DEBE /* MoveView */ = {
+			isa = PBXGroup;
+			children = (
+				114427BB2B4629A70044DEBE /* MoveView.swift */,
+			);
+			path = MoveView;
+			sourceTree = "<group>";
+		};
 		115E312B217B2D1500357D6D = {
 			isa = PBXGroup;
 			children = (
@@ -349,6 +359,7 @@
 			isa = PBXGroup;
 			children = (
 				114427B92B46257B0044DEBE /* AirplaneView */,
+				114427BA2B46298D0044DEBE /* MoveView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -644,6 +655,7 @@
 				115E3185217B325500357D6D /* DateFormatter+Extension.swift in Sources */,
 				113A251D217C6C5100AB90B9 /* EventDetailViewController.swift in Sources */,
 				115E318B217B3AD700357D6D /* TimeInterval+Extension.swift in Sources */,
+				114427BC2B4629A70044DEBE /* MoveView.swift in Sources */,
 				115E3138217B2D1500357D6D /* AppDelegate.swift in Sources */,
 				113A250D217BEAD300AB90B9 /* NavigationController.swift in Sources */,
 				114427B82B4625560044DEBE /* AirplaneView.swift in Sources */,
