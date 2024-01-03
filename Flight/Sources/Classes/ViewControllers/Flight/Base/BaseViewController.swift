@@ -11,14 +11,13 @@ import UIKit
 class BaseViewController: UIViewController {
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
     }
     
     init() {
-        super.init(nibName: String(describing: type(of: self)), bundle: nil)
+        super.init(nibName: nil, bundle: nil)
     }
     
-    //настраиваем стили и/или логику
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .colorOnyx
@@ -33,7 +32,6 @@ class BaseViewController: UIViewController {
         self.title = text
     }
     
-    //настраиваем стиль statusBar
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }

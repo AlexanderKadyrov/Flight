@@ -38,7 +38,6 @@
 		115E3191217B3E6E00357D6D /* seeder_event.json in Resources */ = {isa = PBXBuildFile; fileRef = 115E3190217B3E6E00357D6D /* seeder_event.json */; };
 		115E3193217B3E8F00357D6D /* seeder_move.json in Resources */ = {isa = PBXBuildFile; fileRef = 115E3192217B3E8F00357D6D /* seeder_move.json */; };
 		115E3196217B57DA00357D6D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E3195217B57DA00357D6D /* BaseViewController.swift */; };
-		115E3198217B586200357D6D /* FlightListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 115E3197217B586200357D6D /* FlightListViewController.xib */; };
 		115E319C217B5DC900357D6D /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E319B217B5DC900357D6D /* Data+Extension.swift */; };
 		115E319F217B640800357D6D /* JSONDecoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E319E217B640800357D6D /* JSONDecoder+Extension.swift */; };
 /* End PBXBuildFile section */
@@ -99,7 +98,6 @@
 		115E3190217B3E6E00357D6D /* seeder_event.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = seeder_event.json; sourceTree = "<group>"; };
 		115E3192217B3E8F00357D6D /* seeder_move.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = seeder_move.json; sourceTree = "<group>"; };
 		115E3195217B57DA00357D6D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		115E3197217B586200357D6D /* FlightListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlightListViewController.xib; sourceTree = "<group>"; };
 		115E319B217B5DC900357D6D /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
 		115E319E217B640800357D6D /* JSONDecoder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -365,7 +363,6 @@
 			children = (
 				113A2501217BCF8100AB90B9 /* Cell */,
 				115E316B217B2E5700357D6D /* FlightListViewController.swift */,
-				115E3197217B586200357D6D /* FlightListViewController.xib */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -608,7 +605,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				115E3198217B586200357D6D /* FlightListViewController.xib in Resources */,
 				113A252B217C6F4A00AB90B9 /* MoveDetailViewController.xib in Resources */,
 				113A251F217C6D5200AB90B9 /* EventDetailViewController.xib in Resources */,
 				115E3193217B3E8F00357D6D /* seeder_move.json in Resources */,
