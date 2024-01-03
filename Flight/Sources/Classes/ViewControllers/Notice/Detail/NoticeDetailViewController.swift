@@ -8,12 +8,13 @@
 
 import UIKit
 
-class NoticeDetailViewController: FlightDetailViewController {
+class NoticeDetailViewController: BaseViewController, FlightDetailViewControllerProtocol {
     
     @IBOutlet private weak var labelTitle: UILabel!
     @IBOutlet private weak var labelSubtitle: UILabel!
     
-    //настраиваем стили и/или логику
+    var item: FlightProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         makeToolbar()
@@ -32,8 +33,8 @@ class NoticeDetailViewController: FlightDetailViewController {
     }
     
     private func setData() {
-        guard let thisItem = item as? Notice else { return }
-        labelTitle.text = thisItem.gate
-        labelSubtitle.text = thisItem.flightDate.toString(.formatterDate)
+        guard let item = item as? Notice else { return }
+        labelTitle.text = item.gate
+        labelSubtitle.text = item.flightDate.toString(.formatterDate)
     }
 }
