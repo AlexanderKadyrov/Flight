@@ -14,12 +14,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        let viewController = FlightListViewController()
+        let navigationController = NavigationController(rootViewController: viewController, color: .colorOnyx)
+        
         window = UIWindow(frame: UIScreen.main.bounds)
-        let vc = FlightListViewController()
-        let nv = NavigationViewController(vc, color: .colorOnyx)
-        window?.rootViewController = nv
-        window?.makeKeyAndVisible()
+        window?.rootViewController = navigationController
         window?.tintColor = .white
+        window?.makeKeyAndVisible()
+        
         return true
     }
 }
