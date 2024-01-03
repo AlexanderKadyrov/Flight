@@ -37,7 +37,7 @@ extension Event: FlightProtocol {
     }
     
     var subtitle: String {
-        var values: [String] = [
+        let values: [String] = [
             name,
             startTime.toString(.formatterTime),
             endTime.toString(.formatterTime)
