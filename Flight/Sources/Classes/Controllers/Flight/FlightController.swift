@@ -24,32 +24,29 @@ class FlightController {
     }
     
     private func listNotice() -> [FlightProtocol] {
-        guard
-            let data = Data.resource("seeder_notice"),
-            let list = JSONDecoder.decode([Notice].self, from: data, with: "dd.MM.yyyy")
-        else {
+        do {
+            let data = try Data.resource(name: "seeder_notice")
+            return try JSONDecoder.decode(type: [Notice].self, data: data, dateFormat: "dd.MM.yyyy")
+        } catch {
             return []
         }
-        return list
     }
     
     private func listEvent() -> [FlightProtocol] {
-        guard
-            let data = Data.resource("seeder_event"),
-            let list = JSONDecoder.decode([Event].self, from: data)
-        else {
+        do {
+            let data = try Data.resource(name: "seeder_event")
+            return try JSONDecoder.decode(type: [Event].self, data: data, dateFormat: "dd-MM-yyyy HH:mm:ss")
+        } catch {
             return []
         }
-        return list
     }
     
     private func listMove() -> [FlightProtocol] {
-        guard
-            let data = Data.resource("seeder_move"),
-            let list = JSONDecoder.decode([Move].self, from: data)
-        else {
+        do {
+            let data = try Data.resource(name: "seeder_move")
+            return try JSONDecoder.decode(type: [Move].self, data: data, dateFormat: nil)
+        } catch {
             return []
         }
-        return list
     }
 }
