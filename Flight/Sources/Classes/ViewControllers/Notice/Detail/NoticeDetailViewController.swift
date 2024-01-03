@@ -33,11 +33,7 @@ class NoticeDetailViewController: FlightDetailViewController {
     
     private func setData() {
         guard let thisItem = item as? Notice else { return }
-        if let thisGate = thisItem.gate, !thisGate.isEmpty {
-            labelTitle.text = thisGate
-        }
-        if let thisFlightDate = thisItem.flightDate {
-            labelSubtitle.text = thisFlightDate.toString(.formatterDate)
-        }
+        labelTitle.text = thisItem.gate
+        labelSubtitle.text = thisItem.flightDate.toString(.formatterDate)
     }
 }
