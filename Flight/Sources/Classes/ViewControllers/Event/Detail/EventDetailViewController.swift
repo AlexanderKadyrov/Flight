@@ -44,11 +44,7 @@ class EventDetailViewController: FlightDetailViewController {
         guard let thisItem = item as? Event else { return }
         let nameLogo = "icon_logo_" + thisItem.airline.rawValue
         imageViewLogo.image = UIImage(named: nameLogo)
-        if let thisStartTime = thisItem.startTime {
-            labelStartTime.text = "event_start_time_title".localized() + ": " + thisStartTime.toString(.formatterTime)
-        }
-        if let thisEndTime = thisItem.endTime {
-            labelEndTime.text = "event_end_time_title".localized() + ": " + thisEndTime.toString(.formatterTime)
-        }
+        labelStartTime.text = "event_start_time_title".localized() + ": " + thisItem.startTime.toString(.formatterTime)
+        labelEndTime.text = "event_end_time_title".localized() + ": " + thisItem.endTime.toString(.formatterTime)
     }
 }
