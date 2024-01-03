@@ -21,7 +21,7 @@ extension Notice: FlightProtocol {
     }
     
     var subtitle: String {
-        var values: [String] = [
+        let values: [String] = [
             flightDate.toString(.formatterDate),
             gate
         ]
