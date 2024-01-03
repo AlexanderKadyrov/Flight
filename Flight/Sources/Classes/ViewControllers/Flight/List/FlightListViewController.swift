@@ -58,12 +58,12 @@ class FlightListViewController: BaseViewController {
 extension FlightListViewController: UITableViewDelegate {
     
     //возвращает высоту ячейки
-    internal func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension // <- выставляем автоматическую высоту
     }
     
     //отслеживаем нажатие на ячейку
-    internal func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let item = items[indexPath.row]
         if item is Notice {
             let vc = NoticeDetailViewController()
@@ -85,17 +85,17 @@ extension FlightListViewController: UITableViewDelegate {
 extension FlightListViewController: UITableViewDataSource {
     
     //возвращает кол-во секций
-    internal func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     //возвращает кол-во ячеек
-    internal func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
     
     //возвращает подготовленную ячейку
-    internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = items[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! FlightListTableViewCell
         cell.item = item
