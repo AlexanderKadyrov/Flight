@@ -56,6 +56,8 @@ class FlightListTableViewCell: UITableViewCell {
     }
     
     private func configureViews() {
+        selectionStyle = .none
+        
         contentView.addSubview(containerView)
         containerView.addSubview(titleLabel)
         containerView.addSubview(subtitleLabel)
