@@ -8,14 +8,15 @@
 
 import UIKit
 
-class EventDetailViewController: FlightDetailViewController {
+class EventDetailViewController: BaseViewController, FlightDetailViewControllerProtocol {
     
     @IBOutlet weak var viewContent: UIView!
     @IBOutlet weak var imageViewLogo: UIImageView!
     @IBOutlet private weak var labelStartTime: UILabel!
     @IBOutlet private weak var labelEndTime: UILabel!
     
-    //настраиваем стили и/или логику
+    var item: FlightProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         makeToolbar()
@@ -41,10 +42,10 @@ class EventDetailViewController: FlightDetailViewController {
     }
     
     private func setData() {
-        guard let thisItem = item as? Event else { return }
-        let nameLogo = "icon_logo_" + thisItem.airline.rawValue
+        guard let item = item as? Event else { return }
+        let nameLogo = "icon_logo_" + item.airline.rawValue
         imageViewLogo.image = UIImage(named: nameLogo)
-        labelStartTime.text = "event_start_time_title".localized() + ": " + thisItem.startTime.toString(.formatterTime)
-        labelEndTime.text = "event_end_time_title".localized() + ": " + thisItem.endTime.toString(.formatterTime)
+        labelStartTime.text = "event_start_time_title".localized() + ": " + item.startTime.toString(.formatterTime)
+        labelEndTime.text = "event_end_time_title".localized() + ": " + item.endTime.toString(.formatterTime)
     }
 }
