@@ -23,7 +23,7 @@ class NoticeDetailViewController: BaseViewController, FlightDetailViewController
     }
     
     private func makeToolbar() {
-        setBarTitle("Notice")
+        setNavigationBar(text: "Notice")
     }
     
     private func makeItems() {
