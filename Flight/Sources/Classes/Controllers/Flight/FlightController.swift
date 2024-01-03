@@ -12,7 +12,7 @@ class FlightController {
     
     func rndItems() -> [FlightProtocol] {
         //from 10 to 100 - rnd
-        var items = [FlightProtocol]()
+        var items: [FlightProtocol] = []
         let itemsCount = Int.random(in: 10..<101)
         let flights = [listNotice(), listEvent(), listMove()]
         for _ in 1...itemsCount {
