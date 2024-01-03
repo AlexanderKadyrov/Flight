@@ -31,8 +31,8 @@ class FlightListViewController: BaseViewController {
         return control
     }()
     
-    private lazy var flightController = FlightController()
-    private var items: [FlightProtocol]!
+    private let flightController = FlightController()
+    private var items: [FlightProtocol] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
