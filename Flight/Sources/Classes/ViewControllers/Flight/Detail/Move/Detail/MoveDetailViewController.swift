@@ -27,7 +27,7 @@ class MoveDetailViewController: BaseViewController, FlightDetailViewControllerPr
     }
     
     private func makeToolbar() {
-        setBarTitle("Move")
+        setNavigationBar(text: "Move")
     }
     
     private func makeItems() {
