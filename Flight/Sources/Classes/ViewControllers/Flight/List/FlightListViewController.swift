@@ -17,6 +17,8 @@ class FlightListViewController: BaseViewController {
         view.tableHeaderView = UIView(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 12))
         view.register(FlightListTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .clear
+        view.separatorStyle = .none
         view.dataSource = self
         view.delegate = self
         return view
