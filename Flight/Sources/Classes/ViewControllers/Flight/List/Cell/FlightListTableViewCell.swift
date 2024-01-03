@@ -56,6 +56,7 @@ class FlightListTableViewCell: UITableViewCell {
     }
     
     private func configureViews() {
+        backgroundColor = .clear
         selectionStyle = .none
         
         contentView.addSubview(containerView)
