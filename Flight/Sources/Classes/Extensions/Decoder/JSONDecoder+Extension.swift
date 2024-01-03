@@ -9,7 +9,7 @@
 import Foundation
 
 extension JSONDecoder {
-    static func decode<T>(type: T.Type, data: Data, dateFormat: String?) throws -> T? where T : Decodable {
+    static func decode<T>(type: T.Type, data: Data, dateFormat: String?) throws -> T where T : Decodable {
         let decoder = JSONDecoder()
         if let dateFormat = dateFormat {
             let dateFormatter = DateFormatter()
