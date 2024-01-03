@@ -155,9 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				115E316D217B2E6000357D6D /* Flight */,
-				113A2520217C6DB700AB90B9 /* Notice */,
-				113A251A217C6C1700AB90B9 /* Event */,
-				113A2526217C6EB400AB90B9 /* Move */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -240,6 +237,9 @@
 		113A252C217C725400AB90B9 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				113A2526217C6EB400AB90B9 /* Move */,
+				113A251A217C6C1700AB90B9 /* Event */,
+				113A2520217C6DB700AB90B9 /* Notice */,
 				113A252D217C727E00AB90B9 /* FlightDetailViewControllerProtocol.swift */,
 			);
 			path = Detail;
