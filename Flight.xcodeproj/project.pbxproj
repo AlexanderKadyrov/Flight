@@ -10,7 +10,7 @@
 		113A2500217BCF7D00AB90B9 /* FlightListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A24FF217BCF7D00AB90B9 /* FlightListTableViewCell.swift */; };
 		113A2506217BDA1500AB90B9 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A2505217BDA1500AB90B9 /* UIColor+Extension.swift */; };
 		113A2509217BEA0800AB90B9 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A2508217BEA0800AB90B9 /* UIImage+Extension.swift */; };
-		113A250D217BEAD300AB90B9 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A250C217BEAD300AB90B9 /* NavigationViewController.swift */; };
+		113A250D217BEAD300AB90B9 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A250C217BEAD300AB90B9 /* NavigationController.swift */; };
 		113A2511217BEDB600AB90B9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 113A2513217BEDB600AB90B9 /* Localizable.strings */; };
 		113A2518217BEEEC00AB90B9 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A2517217BEEEC00AB90B9 /* String+Extension.swift */; };
 		113A251D217C6C5100AB90B9 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A251C217C6C5000AB90B9 /* EventDetailViewController.swift */; };
@@ -61,7 +61,7 @@
 		113A24FF217BCF7D00AB90B9 /* FlightListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListTableViewCell.swift; sourceTree = "<group>"; };
 		113A2505217BDA1500AB90B9 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		113A2508217BEA0800AB90B9 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
-		113A250C217BEAD300AB90B9 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		113A250C217BEAD300AB90B9 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		113A2514217BEDC200AB90B9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		113A2515217BEDD200AB90B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		113A2517217BEEEC00AB90B9 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 		113A250B217BEAAD00AB90B9 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				113A250C217BEAD300AB90B9 /* NavigationViewController.swift */,
+				113A250C217BEAD300AB90B9 /* NavigationController.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -310,6 +310,7 @@
 		115E3167217B2DE100357D6D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				113A250B217BEAAD00AB90B9 /* Navigation */,
 				115E3172217B2EB000357D6D /* Flight */,
 				115E3168217B2DE600357D6D /* Base */,
 			);
@@ -337,7 +338,6 @@
 		115E316A217B2E3500357D6D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				113A250B217BEAAD00AB90B9 /* Navigation */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -634,7 +634,7 @@
 				113A251D217C6C5100AB90B9 /* EventDetailViewController.swift in Sources */,
 				115E318B217B3AD700357D6D /* TimeInterval+Extension.swift in Sources */,
 				115E3138217B2D1500357D6D /* AppDelegate.swift in Sources */,
-				113A250D217BEAD300AB90B9 /* NavigationViewController.swift in Sources */,
+				113A250D217BEAD300AB90B9 /* NavigationController.swift in Sources */,
 				115E3177217B2EF200357D6D /* Notice.swift in Sources */,
 				115E3196217B57DA00357D6D /* BaseViewController.swift in Sources */,
 				113A2500217BCF7D00AB90B9 /* FlightListTableViewCell.swift in Sources */,
