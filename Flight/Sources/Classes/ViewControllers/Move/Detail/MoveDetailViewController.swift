@@ -8,14 +8,15 @@
 
 import UIKit
 
-class MoveDetailViewController: FlightDetailViewController {
-    
+class MoveDetailViewController: BaseViewController, FlightDetailViewControllerProtocol {
     
     @IBOutlet private weak var viewContainerAirplaneTakeoff: UIView!
     @IBOutlet private weak var viewContainerAirplaneLanding: UIView!
     @IBOutlet private weak var labelFromPlace: UILabel!
     @IBOutlet private weak var labelToPlace: UILabel!
     @IBOutlet private weak var labelTime: UILabel!
+    
+    var item: FlightProtocol?
     
     //настраиваем стили и/или логику
     override func viewDidLoad() {
@@ -41,9 +42,9 @@ class MoveDetailViewController: FlightDetailViewController {
     }
     
     private func setData() {
-        guard let thisItem = item as? Move else { return }
-        labelFromPlace.text = thisItem.fromPlace
-        labelToPlace.text = thisItem.toPlace
-        labelTime.text = thisItem.estimateTime.toString
+        guard let item = item as? Move else { return }
+        labelFromPlace.text = item.fromPlace
+        labelToPlace.text = item.toPlace
+        labelTime.text = item.estimateTime.toString
     }
 }
