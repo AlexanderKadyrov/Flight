@@ -42,7 +42,8 @@ class FlightListViewController: BaseViewController {
     }
     
     private func configureToolbar() {
-        setBarTitle("flight_navigation_bar_title".localized() + " " + "App")
+        let localized = "flight_navigation_bar_title".localized()
+        setNavigationBar(text: "\(localized) App")
     }
     
     private func configureViews() {
