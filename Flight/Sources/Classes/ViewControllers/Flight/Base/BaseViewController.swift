@@ -23,13 +23,12 @@ class BaseViewController: UIViewController {
         view.backgroundColor = .colorOnyx
     }
     
-    func setBarTitle(_ text: String) {
-        let navigationTitleFont = UIFont.boldSystemFont(ofSize: 21)
-        self.navigationController?.navigationBar.titleTextAttributes = [
-            NSAttributedString.Key.font: navigationTitleFont,
+    func setNavigationBar(text: String) {
+        navigationController?.navigationBar.titleTextAttributes = [
+            NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 21),
             NSAttributedString.Key.foregroundColor: UIColor.white
         ]
-        self.title = text
+        title = text
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
