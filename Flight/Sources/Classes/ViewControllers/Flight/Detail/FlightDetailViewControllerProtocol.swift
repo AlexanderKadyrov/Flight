@@ -8,6 +8,6 @@
 
 import UIKit
 
-protocol FlightDetailViewControllerProtocol: BaseViewController {
+protocol FlightDetailViewControllerProtocol {
     var item: FlightProtocol? { get set }
 }
