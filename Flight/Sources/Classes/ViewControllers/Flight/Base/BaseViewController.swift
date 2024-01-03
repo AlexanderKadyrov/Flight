@@ -34,7 +34,7 @@ class BaseViewController: UIViewController {
     }
     
     //настраиваем стиль statusBar
-    internal override var preferredStatusBarStyle: UIStatusBarStyle {
+    override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
 }
