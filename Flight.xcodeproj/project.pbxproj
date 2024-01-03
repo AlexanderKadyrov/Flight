@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		113A2500217BCF7D00AB90B9 /* FlightListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A24FF217BCF7D00AB90B9 /* FlightListTableViewCell.swift */; };
-		113A2503217BCFB600AB90B9 /* FlightListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113A2502217BCFB600AB90B9 /* FlightListTableViewCell.xib */; };
 		113A2506217BDA1500AB90B9 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A2505217BDA1500AB90B9 /* UIColor+Extension.swift */; };
 		113A2509217BEA0800AB90B9 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A2508217BEA0800AB90B9 /* UIImage+Extension.swift */; };
 		113A250D217BEAD300AB90B9 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A250C217BEAD300AB90B9 /* NavigationViewController.swift */; };
@@ -63,7 +62,6 @@
 
 /* Begin PBXFileReference section */
 		113A24FF217BCF7D00AB90B9 /* FlightListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListTableViewCell.swift; sourceTree = "<group>"; };
-		113A2502217BCFB600AB90B9 /* FlightListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlightListTableViewCell.xib; sourceTree = "<group>"; };
 		113A2505217BDA1500AB90B9 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		113A2508217BEA0800AB90B9 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		113A250C217BEAD300AB90B9 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
@@ -135,7 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				113A24FF217BCF7D00AB90B9 /* FlightListTableViewCell.swift */,
-				113A2502217BCFB600AB90B9 /* FlightListTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -612,7 +609,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				115E3198217B586200357D6D /* FlightListViewController.xib in Resources */,
-				113A2503217BCFB600AB90B9 /* FlightListTableViewCell.xib in Resources */,
 				113A252B217C6F4A00AB90B9 /* MoveDetailViewController.xib in Resources */,
 				113A251F217C6D5200AB90B9 /* EventDetailViewController.xib in Resources */,
 				115E3193217B3E8F00357D6D /* seeder_move.json in Resources */,
