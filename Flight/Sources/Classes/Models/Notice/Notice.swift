@@ -7,11 +7,10 @@
 //
 
 import Foundation
-import UIKit
 
 struct Notice: Codable {
-    var flightDate: Date
-    var gate: String
+    let flightDate: Date
+    let gate: String
 }
 
 extension Notice: FlightProtocol {

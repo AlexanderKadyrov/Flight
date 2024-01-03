@@ -42,14 +42,8 @@ class MoveDetailViewController: FlightDetailViewController {
     
     private func setData() {
         guard let thisItem = item as? Move else { return }
-        if let thisFromPlace = thisItem.fromPlace, !thisFromPlace.isEmpty {
-            labelFromPlace.text = thisFromPlace
-        }
-        if let thisToPlace = thisItem.toPlace, !thisToPlace.isEmpty {
-            labelToPlace.text = thisToPlace
-        }
-        if let thisEstimateTime = thisItem.estimateTime {
-            labelTime.text = thisEstimateTime.toString
-        }
+        labelFromPlace.text = thisItem.fromPlace
+        labelToPlace.text = thisItem.toPlace
+        labelTime.text = thisItem.estimateTime.toString
     }
 }

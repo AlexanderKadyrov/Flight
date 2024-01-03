@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Event: Codable {
+class Event: Codable {
     
     enum Airline: String, Codable {
         case uralairlines
@@ -24,10 +24,10 @@ struct Event: Codable {
         case s7
     }
     
-    var startTime: Date
-    var endTime: Date
-    var airline: Airline
-    var name: String
+    let startTime: Date
+    let endTime: Date
+    let airline: Airline
+    let name: String
 }
 
 extension Event: FlightProtocol {
