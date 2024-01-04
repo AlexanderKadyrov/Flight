@@ -75,7 +75,7 @@ final class FlightTabloidCellView: TabloidCellView {
     
     override func fill(viewModel: TabloidCellViewModel?) {
         super.fill(viewModel: viewModel)
-        guard let viewModel = viewModel as? FlightListTabloidCellViewModel else { return }
+        guard let viewModel = viewModel as? FlightTabloidCellViewModel else { return }
         titleLabel.text = viewModel.model.title
         subtitleLabel.text = viewModel.model.subtitle
     }
