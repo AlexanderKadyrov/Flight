@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MoveViewController: BaseViewController, FlightDetailViewControllerProtocol {
+class MoveViewController: BaseViewController {
     
     private let moveView: MoveView = {
         let view = MoveView()
@@ -34,12 +34,11 @@ class MoveViewController: BaseViewController, FlightDetailViewControllerProtocol
         return label
     }()
     
-    var item: FlightProtocol? {
+    var viewModel: MoveViewModel? {
         didSet {
-            guard let item = item as? Move else { return }
-            moveView.estimateTime = item.estimateTime.toString
-            fromPlaceLabel.text = item.fromPlace
-            toPlaceLabel.text = item.toPlace
+            moveView.estimateTime = viewModel?.estimateTime
+            fromPlaceLabel.text = viewModel?.fromPlace
+            toPlaceLabel.text = viewModel?.toPlace
         }
     }
     
