@@ -17,15 +17,15 @@ final class Router {
         case move
     }
     
-    private let rootViewController: UIViewController
+    private let rootViewController: NavigationController
     private let factory = RouterFactory()
     
-    init(rootViewController: UIViewController) {
+    init(rootViewController: NavigationController) {
         self.rootViewController = rootViewController
     }
     
     func push(path: Path, model: FlightProtocol, animated: Bool) {
         let viewController = factory.viewController(path: path, model: model)
-        rootViewController.navigationController?.pushViewController(viewController, animated: animated)
+        rootViewController.pushViewController(viewController, animated: animated)
     }
 }

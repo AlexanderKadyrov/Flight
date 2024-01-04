@@ -8,20 +8,14 @@
 
 import TabloidView
 import Foundation
+import Combine
 
 final class FlightViewModel {
     
-    private let flightController = FlightController()
-    
-    private var sections: [[FlightTabloidCellViewModel]] {
-        let cellViewModels = flightController
-            .rndItems()
-            .map { FlightTabloidCellViewModel(model: $0) }
-        return [cellViewModels]
-    }
+    private let factory = FlightTabloidCellViewModelFactory()
+    private var subscriptions = Set<AnyCancellable>()
     
     let tabloidViewModel = TabloidViewModel()
-    
     var router: Router?
     
     init() {
@@ -29,6 +23,15 @@ final class FlightViewModel {
     }
     
     func fetchItems() {
-        tabloidViewModel.sections = sections
+        tabloidViewModel.sections = factory.sections(viewModel: self)
+    }
+    
+    func didSelect(publisher: AnyPublisher<TabloidCellViewModel, Never>) {
+        publisher
+            .compactMap { $0 as? FlightTabloidCellViewModel }
+            .sink { [weak self] cellViewModel in
+                self?.router?.push(path: .event, model: cellViewModel.model, animated: true)
+            }
+            .store(in: &subscriptions)
     }
 }

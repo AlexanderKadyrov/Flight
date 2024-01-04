@@ -49,6 +49,7 @@
 		11D31A7F2B476DA9000E5B3B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A7E2B476DA9000E5B3B /* Router.swift */; };
 		11D31A812B476DC9000E5B3B /* RouterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A802B476DC9000E5B3B /* RouterFactory.swift */; };
 		11D31A832B47726F000E5B3B /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A822B47726F000E5B3B /* ViewModelProtocol.swift */; };
+		11D31A862B47796F000E5B3B /* FlightTabloidCellViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A852B47796F000E5B3B /* FlightTabloidCellViewModelFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,7 @@
 		11D31A7E2B476DA9000E5B3B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		11D31A802B476DC9000E5B3B /* RouterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterFactory.swift; sourceTree = "<group>"; };
 		11D31A822B47726F000E5B3B /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		11D31A852B47796F000E5B3B /* FlightTabloidCellViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTabloidCellViewModelFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			children = (
 				113A24FF217BCF7D00AB90B9 /* FlightTabloidCellView.swift */,
 				11D31A752B47074A000E5B3B /* FlightTabloidCellViewModel.swift */,
+				11D31A852B47796F000E5B3B /* FlightTabloidCellViewModelFactory.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -665,6 +668,7 @@
 				114427BF2B462FBC0044DEBE /* EstimateTimeView.swift in Sources */,
 				115E318B217B3AD700357D6D /* TimeInterval+Extension.swift in Sources */,
 				114427BC2B4629A70044DEBE /* MoveView.swift in Sources */,
+				11D31A862B47796F000E5B3B /* FlightTabloidCellViewModelFactory.swift in Sources */,
 				11D31A7F2B476DA9000E5B3B /* Router.swift in Sources */,
 				115E3138217B2D1500357D6D /* AppDelegate.swift in Sources */,
 				11D31A812B476DC9000E5B3B /* RouterFactory.swift in Sources */,
