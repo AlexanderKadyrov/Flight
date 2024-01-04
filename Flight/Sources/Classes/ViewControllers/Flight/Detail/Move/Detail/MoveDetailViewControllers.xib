@@ -1,25 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina3_5" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoveDetailViewController" customModule="Flight" customModuleProvider="target">
-            <connections>
-                <outlet property="labelFromPlace" destination="n0B-Cd-E4X" id="hYN-4F-7sa"/>
-                <outlet property="labelTime" destination="gki-F2-6Wd" id="MKC-V2-Zlx"/>
-                <outlet property="labelToPlace" destination="o4D-9y-aC7" id="eJz-ee-zby"/>
-                <outlet property="view" destination="iN0-l3-epB" id="Z5t-Tp-aU5"/>
-                <outlet property="viewContainerAirplaneLanding" destination="6LE-Jw-fLp" id="FsU-FI-Sxg"/>
-                <outlet property="viewContainerAirplaneTakeoff" destination="vvt-gM-7iH" id="JFe-1z-ReW"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoveDetailViewController" customModule="Flight" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -134,7 +123,8 @@
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="n0B-Cd-E4X" secondAttribute="trailing" constant="20" id="2YG-qL-9mW"/>
                 <constraint firstItem="n0B-Cd-E4X" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Lvp-TL-1v4"/>
@@ -146,12 +136,14 @@
                 <constraint firstItem="o4D-9y-aC7" firstAttribute="top" secondItem="gwb-Bn-Zfm" secondAttribute="bottom" id="jjB-XH-yCc"/>
                 <constraint firstItem="o4D-9y-aC7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="nC3-Gy-4eU"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="138.75" y="155"/>
         </view>
     </objects>
     <resources>
         <image name="icon_airplane_landing" width="36" height="36"/>
         <image name="icon_airplane_takeoff" width="36" height="36"/>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.1215686274509804" green="0.12941176470588239" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

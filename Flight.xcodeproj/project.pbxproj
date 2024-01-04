@@ -16,7 +16,7 @@
 		113A251D217C6C5100AB90B9 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A251C217C6C5000AB90B9 /* EventDetailViewController.swift */; };
 		113A2523217C6DE300AB90B9 /* NoticeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A2522217C6DE300AB90B9 /* NoticeDetailViewController.swift */; };
 		113A2529217C6EF500AB90B9 /* MoveDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A2528217C6EF500AB90B9 /* MoveDetailViewController.swift */; };
-		113A252B217C6F4A00AB90B9 /* MoveDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113A252A217C6F4A00AB90B9 /* MoveDetailViewController.xib */; };
+		113A252B217C6F4A00AB90B9 /* MoveDetailViewControllers.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113A252A217C6F4A00AB90B9 /* MoveDetailViewControllers.xib */; };
 		113A252E217C727E00AB90B9 /* FlightDetailViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A252D217C727E00AB90B9 /* FlightDetailViewControllerProtocol.swift */; };
 		113A2530217C7C9300AB90B9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113A252F217C7C9300AB90B9 /* LaunchScreen.xib */; };
 		114427B82B4625560044DEBE /* AirplaneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114427B72B4625560044DEBE /* AirplaneView.swift */; };
@@ -70,7 +70,7 @@
 		113A251C217C6C5000AB90B9 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		113A2522217C6DE300AB90B9 /* NoticeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeDetailViewController.swift; sourceTree = "<group>"; };
 		113A2528217C6EF500AB90B9 /* MoveDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveDetailViewController.swift; sourceTree = "<group>"; };
-		113A252A217C6F4A00AB90B9 /* MoveDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoveDetailViewController.xib; sourceTree = "<group>"; };
+		113A252A217C6F4A00AB90B9 /* MoveDetailViewControllers.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoveDetailViewControllers.xib; sourceTree = "<group>"; };
 		113A252D217C727E00AB90B9 /* FlightDetailViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailViewControllerProtocol.swift; sourceTree = "<group>"; };
 		113A252F217C7C9300AB90B9 /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		114427B72B4625560044DEBE /* AirplaneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirplaneView.swift; sourceTree = "<group>"; };
@@ -227,7 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				113A2528217C6EF500AB90B9 /* MoveDetailViewController.swift */,
-				113A252A217C6F4A00AB90B9 /* MoveDetailViewController.xib */,
+				113A252A217C6F4A00AB90B9 /* MoveDetailViewControllers.xib */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -621,7 +621,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				113A252B217C6F4A00AB90B9 /* MoveDetailViewController.xib in Resources */,
+				113A252B217C6F4A00AB90B9 /* MoveDetailViewControllers.xib in Resources */,
 				115E3193217B3E8F00357D6D /* seeder_move.json in Resources */,
 				113A2511217BEDB600AB90B9 /* Localizable.strings in Resources */,
 				115E3191217B3E6E00357D6D /* seeder_event.json in Resources */,
