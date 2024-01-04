@@ -44,6 +44,7 @@
 		11D31A742B470446000E5B3B /* FlightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A732B470446000E5B3B /* FlightViewModel.swift */; };
 		11D31A762B47074A000E5B3B /* FlightTabloidCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A752B47074A000E5B3B /* FlightTabloidCellViewModel.swift */; };
 		11D31A782B47122C000E5B3B /* NoticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A772B47122C000E5B3B /* NoticeViewModel.swift */; };
+		11D31A7A2B4769AC000E5B3B /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A792B4769AC000E5B3B /* EventViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		11D31A732B470446000E5B3B /* FlightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightViewModel.swift; sourceTree = "<group>"; };
 		11D31A752B47074A000E5B3B /* FlightTabloidCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTabloidCellViewModel.swift; sourceTree = "<group>"; };
 		11D31A772B47122C000E5B3B /* NoticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewModel.swift; sourceTree = "<group>"; };
+		11D31A792B4769AC000E5B3B /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				113A251C217C6C5000AB90B9 /* EventViewController.swift */,
+				11D31A792B4769AC000E5B3B /* EventViewModel.swift */,
 			);
 			path = Event;
 			sourceTree = "<group>";
@@ -660,6 +663,7 @@
 				115E317E217B2F3900357D6D /* Move.swift in Sources */,
 				115E3188217B349A00357D6D /* Date+Extension.swift in Sources */,
 				113A2518217BEEEC00AB90B9 /* String+Extension.swift in Sources */,
+				11D31A7A2B4769AC000E5B3B /* EventViewModel.swift in Sources */,
 				113A2506217BDA1500AB90B9 /* UIColor+Extension.swift in Sources */,
 				115E316C217B2E5700357D6D /* FlightViewController.swift in Sources */,
 				11D31A782B47122C000E5B3B /* NoticeViewModel.swift in Sources */,
