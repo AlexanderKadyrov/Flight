@@ -13,7 +13,6 @@ class FlightViewController: BaseViewController {
     
     private lazy var tableView: TabloidView = {
         let view = TabloidView(style: .plain)
-        view.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 12))
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .clear
         view.separatorStyle = .none
