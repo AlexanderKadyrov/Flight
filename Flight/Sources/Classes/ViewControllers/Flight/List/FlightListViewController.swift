@@ -6,21 +6,17 @@
 //  Copyright © 2018 Alexander Kadyrov. All rights reserved.
 //
 
+import TabloidView
 import UIKit
-
-fileprivate let cellIdentifier = "FlightListTableViewCell"
 
 class FlightListViewController: BaseViewController {
     
-    private lazy var tableView: UITableView = {
-        let view = UITableView(frame: .zero, style: .plain)
-        view.tableHeaderView = UIView(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 12))
-        view.register(FlightListTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+    private lazy var tableView: TabloidView = {
+        let view = TabloidView(style: .plain)
+        view.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 12))
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .clear
         view.separatorStyle = .none
-        view.dataSource = self
-        view.delegate = self
         return view
     }()
     
@@ -31,8 +27,11 @@ class FlightListViewController: BaseViewController {
         return control
     }()
     
-    private let flightController = FlightController()
-    private var items: [FlightProtocol] = []
+    var viewModel: FlightListViewModel? {
+        didSet {
+            tableView.viewModel = viewModel?.tabloidViewModel
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,51 +58,7 @@ class FlightListViewController: BaseViewController {
     
     @objc
     private func fetchItems() {
-        items = flightController.rndItems()
-        tableView.reloadData()
+        viewModel?.fetchItems()
         refreshControl.endRefreshing()
-    }
-}
-
-extension FlightListViewController: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let item = items[indexPath.row]
-        if item is Notice {
-            let vc = NoticeDetailViewController()
-            vc.item = item
-            navigationController?.pushViewController(vc, animated: true)
-        } else if item is Event {
-            let vc = EventDetailViewController()
-            vc.item = item
-            navigationController?.pushViewController(vc, animated: true)
-        } else if item is Move {
-            let vc = MoveDetailViewController()
-            vc.item = item
-            navigationController?.pushViewController(vc, animated: true)
-        }
-        tableView.deselectRow(at: indexPath, animated: true)
-    }
-}
-
-extension FlightListViewController: UITableViewDataSource {
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let item = items[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as? FlightListTableViewCell
-        cell?.item = item
-        return cell ?? UITableViewCell()
     }
 }
