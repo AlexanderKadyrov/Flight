@@ -37,7 +37,6 @@ class FlightListViewController: BaseViewController {
         super.viewDidLoad()
         configureToolbar()
         configureViews()
-        fetchItems()
     }
     
     private func configureToolbar() {
