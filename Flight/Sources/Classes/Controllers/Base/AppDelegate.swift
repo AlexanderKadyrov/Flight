@@ -20,6 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         viewController.viewModel = viewModel
         
         let navigationController = NavigationController(rootViewController: viewController, color: .colorOnyx)
+        let router = Router(rootViewController: navigationController)
+        
+        viewModel.router = router
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navigationController

@@ -22,6 +22,8 @@ final class FlightViewModel {
     
     let tabloidViewModel = TabloidViewModel()
     
+    var router: Router?
+    
     init() {
         fetchItems()
     }
