@@ -11,13 +11,7 @@ import UIKit
 
 final class RouterFactory {
     
-    enum Path {
-        case notice
-        case event
-        case move
-    }
-    
-    func viewController(path: Path, model: FlightProtocol) -> UIViewController {
+    func viewController(path: Router.Path, model: FlightProtocol) -> UIViewController {
         switch path {
         case .notice:
             return noticeViewController(model: model)

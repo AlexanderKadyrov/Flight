@@ -10,4 +10,11 @@ import Foundation
 
 final class Router {
     
+    enum Path {
+        case notice
+        case event
+        case move
+    }
+    
+    private let factory = RouterFactory()
 }
