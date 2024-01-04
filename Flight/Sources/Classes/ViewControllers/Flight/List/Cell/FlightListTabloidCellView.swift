@@ -6,9 +6,10 @@
 //  Copyright © 2018 Alexander Kadyrov. All rights reserved.
 //
 
+import TabloidView
 import UIKit
 
-class FlightListTableViewCell: UITableViewCell {
+final class FlightListTabloidCellView: TabloidCellView {
     
     private let containerView: UIView = {
         let view = UIView()
@@ -36,14 +37,6 @@ class FlightListTableViewCell: UITableViewCell {
         label.numberOfLines = 0
         return label
     }()
-    
-    var item: FlightProtocol? {
-        didSet {
-            guard let thisItem = item else { return }
-            titleLabel.text = thisItem.title
-            subtitleLabel.text = thisItem.subtitle
-        }
-    }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -78,5 +71,12 @@ class FlightListTableViewCell: UITableViewCell {
             subtitleLabel.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -8),
             subtitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8)
         ])
+    }
+    
+    override func fill(viewModel: TabloidCellViewModel?) {
+        super.fill(viewModel: viewModel)
+        guard let viewModel = viewModel as? FlightListTabloidCellViewModel else { return }
+        titleLabel.text = viewModel.model.title
+        subtitleLabel.text = viewModel.model.subtitle
     }
 }
