@@ -186,49 +186,25 @@
 		113A251A217C6C1700AB90B9 /* Event */ = {
 			isa = PBXGroup;
 			children = (
-				113A251B217C6C2900AB90B9 /* Detail */,
-			);
-			path = Event;
-			sourceTree = "<group>";
-		};
-		113A251B217C6C2900AB90B9 /* Detail */ = {
-			isa = PBXGroup;
-			children = (
 				113A251C217C6C5000AB90B9 /* EventDetailViewController.swift */,
 			);
-			path = Detail;
+			path = Event;
 			sourceTree = "<group>";
 		};
 		113A2520217C6DB700AB90B9 /* Notice */ = {
 			isa = PBXGroup;
 			children = (
-				113A2521217C6DC400AB90B9 /* Detail */,
-			);
-			path = Notice;
-			sourceTree = "<group>";
-		};
-		113A2521217C6DC400AB90B9 /* Detail */ = {
-			isa = PBXGroup;
-			children = (
 				113A2522217C6DE300AB90B9 /* NoticeDetailViewController.swift */,
 			);
-			path = Detail;
+			path = Notice;
 			sourceTree = "<group>";
 		};
 		113A2526217C6EB400AB90B9 /* Move */ = {
 			isa = PBXGroup;
 			children = (
-				113A2527217C6EC600AB90B9 /* Detail */,
-			);
-			path = Move;
-			sourceTree = "<group>";
-		};
-		113A2527217C6EC600AB90B9 /* Detail */ = {
-			isa = PBXGroup;
-			children = (
 				113A2528217C6EF500AB90B9 /* MoveDetailViewController.swift */,
 			);
-			path = Detail;
+			path = Move;
 			sourceTree = "<group>";
 		};
 		113A252C217C725400AB90B9 /* Detail */ = {
