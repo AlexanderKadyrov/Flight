@@ -8,11 +8,6 @@
 
 import Foundation
 
-protocol ViewModelProtocol {
-    associatedtype M: FlightProtocol
-    var model: M? { get set }
-}
-
 final class NoticeViewModel: ViewModelProtocol {
     
     private(set) var flightDate: String?

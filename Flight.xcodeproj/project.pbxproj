@@ -48,6 +48,7 @@
 		11D31A7C2B476C20000E5B3B /* MoveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A7B2B476C20000E5B3B /* MoveViewModel.swift */; };
 		11D31A7F2B476DA9000E5B3B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A7E2B476DA9000E5B3B /* Router.swift */; };
 		11D31A812B476DC9000E5B3B /* RouterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A802B476DC9000E5B3B /* RouterFactory.swift */; };
+		11D31A832B47726F000E5B3B /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A822B47726F000E5B3B /* ViewModelProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,7 @@
 		11D31A7B2B476C20000E5B3B /* MoveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveViewModel.swift; sourceTree = "<group>"; };
 		11D31A7E2B476DA9000E5B3B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		11D31A802B476DC9000E5B3B /* RouterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterFactory.swift; sourceTree = "<group>"; };
+		11D31A822B47726F000E5B3B /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 				115E316E217B2E6F00357D6D /* Flight */,
 				115E3194217B57BC00357D6D /* Base */,
 				113A252D217C727E00AB90B9 /* FlightDetailViewControllerProtocol.swift */,
+				11D31A822B47726F000E5B3B /* ViewModelProtocol.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -686,6 +689,7 @@
 				115E317B217B2F1E00357D6D /* Event.swift in Sources */,
 				115E319F217B640800357D6D /* JSONDecoder+Extension.swift in Sources */,
 				113A252E217C727E00AB90B9 /* FlightDetailViewControllerProtocol.swift in Sources */,
+				11D31A832B47726F000E5B3B /* ViewModelProtocol.swift in Sources */,
 				113A2529217C6EF500AB90B9 /* MoveViewController.swift in Sources */,
 				115E3174217B2EC300357D6D /* FlightController.swift in Sources */,
 				115E3181217B316600357D6D /* FlightProtocol.swift in Sources */,
