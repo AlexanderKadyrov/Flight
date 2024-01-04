@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -40,6 +40,7 @@
 		115E3196217B57DA00357D6D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E3195217B57DA00357D6D /* BaseViewController.swift */; };
 		115E319C217B5DC900357D6D /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E319B217B5DC900357D6D /* Data+Extension.swift */; };
 		115E319F217B640800357D6D /* JSONDecoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E319E217B640800357D6D /* JSONDecoder+Extension.swift */; };
+		11D31A722B4703E4000E5B3B /* TabloidView in Frameworks */ = {isa = PBXBuildFile; productRef = 11D31A712B4703E4000E5B3B /* TabloidView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11D31A722B4703E4000E5B3B /* TabloidView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +518,9 @@
 			dependencies = (
 			);
 			name = Flight;
+			packageProductDependencies = (
+				11D31A712B4703E4000E5B3B /* TabloidView */,
+			);
 			productName = Flight;
 			productReference = 115E3134217B2D1500357D6D /* Flight.app */;
 			productType = "com.apple.product-type.application";
@@ -589,6 +594,9 @@
 				en,
 			);
 			mainGroup = 115E312B217B2D1500357D6D;
+			packageReferences = (
+				11D31A702B4703E4000E5B3B /* XCRemoteSwiftPackageReference "TabloidView" */,
+			);
 			productRefGroup = 115E3135217B2D1500357D6D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -985,6 +993,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		11D31A702B4703E4000E5B3B /* XCRemoteSwiftPackageReference "TabloidView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AlexanderKadyrov/TabloidView";
+			requirement = {
+				kind = exactVersion;
+				version = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		11D31A712B4703E4000E5B3B /* TabloidView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11D31A702B4703E4000E5B3B /* XCRemoteSwiftPackageReference "TabloidView" */;
+			productName = TabloidView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 115E312C217B2D1500357D6D /* Project object */;
 }
