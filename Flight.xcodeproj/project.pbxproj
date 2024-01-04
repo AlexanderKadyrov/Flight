@@ -13,7 +13,7 @@
 		113A250D217BEAD300AB90B9 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A250C217BEAD300AB90B9 /* NavigationController.swift */; };
 		113A2511217BEDB600AB90B9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 113A2513217BEDB600AB90B9 /* Localizable.strings */; };
 		113A2518217BEEEC00AB90B9 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A2517217BEEEC00AB90B9 /* String+Extension.swift */; };
-		113A251D217C6C5100AB90B9 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A251C217C6C5000AB90B9 /* EventDetailViewController.swift */; };
+		113A251D217C6C5100AB90B9 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A251C217C6C5000AB90B9 /* EventViewController.swift */; };
 		113A2523217C6DE300AB90B9 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A2522217C6DE300AB90B9 /* NoticeViewController.swift */; };
 		113A2529217C6EF500AB90B9 /* MoveDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A2528217C6EF500AB90B9 /* MoveDetailViewController.swift */; };
 		113A252E217C727E00AB90B9 /* FlightDetailViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A252D217C727E00AB90B9 /* FlightDetailViewControllerProtocol.swift */; };
@@ -70,7 +70,7 @@
 		113A2514217BEDC200AB90B9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		113A2515217BEDD200AB90B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		113A2517217BEEEC00AB90B9 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
-		113A251C217C6C5000AB90B9 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
+		113A251C217C6C5000AB90B9 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		113A2522217C6DE300AB90B9 /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
 		113A2528217C6EF500AB90B9 /* MoveDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveDetailViewController.swift; sourceTree = "<group>"; };
 		113A252D217C727E00AB90B9 /* FlightDetailViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailViewControllerProtocol.swift; sourceTree = "<group>"; };
@@ -194,7 +194,7 @@
 		113A251A217C6C1700AB90B9 /* Event */ = {
 			isa = PBXGroup;
 			children = (
-				113A251C217C6C5000AB90B9 /* EventDetailViewController.swift */,
+				113A251C217C6C5000AB90B9 /* EventViewController.swift */,
 			);
 			path = Event;
 			sourceTree = "<group>";
@@ -642,7 +642,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				115E3185217B325500357D6D /* DateFormatter+Extension.swift in Sources */,
-				113A251D217C6C5100AB90B9 /* EventDetailViewController.swift in Sources */,
+				113A251D217C6C5100AB90B9 /* EventViewController.swift in Sources */,
 				114427BF2B462FBC0044DEBE /* EstimateTimeView.swift in Sources */,
 				115E318B217B3AD700357D6D /* TimeInterval+Extension.swift in Sources */,
 				114427BC2B4629A70044DEBE /* MoveView.swift in Sources */,

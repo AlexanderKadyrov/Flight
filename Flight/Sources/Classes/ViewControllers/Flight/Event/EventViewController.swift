@@ -1,5 +1,5 @@
 //
-//  EventDetailViewController.swift
+//  EventViewController.swift
 //  Flight
 //
 //  Created by Alexander on 21/10/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class EventDetailViewController: BaseViewController, FlightDetailViewControllerProtocol {
+final class EventViewController: BaseViewController, FlightDetailViewControllerProtocol {
     
     private let containerView: UIView = {
         let view = UIView()
