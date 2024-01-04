@@ -12,4 +12,5 @@ import UIKit
 protocol FlightProtocol {
     var title: String { get }
     var subtitle: String { get }
+    var path: Router.Path { get }
 }
