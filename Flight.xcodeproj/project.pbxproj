@@ -45,6 +45,7 @@
 		11D31A762B47074A000E5B3B /* FlightTabloidCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A752B47074A000E5B3B /* FlightTabloidCellViewModel.swift */; };
 		11D31A782B47122C000E5B3B /* NoticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A772B47122C000E5B3B /* NoticeViewModel.swift */; };
 		11D31A7A2B4769AC000E5B3B /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A792B4769AC000E5B3B /* EventViewModel.swift */; };
+		11D31A7C2B476C20000E5B3B /* MoveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A7B2B476C20000E5B3B /* MoveViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		11D31A752B47074A000E5B3B /* FlightTabloidCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTabloidCellViewModel.swift; sourceTree = "<group>"; };
 		11D31A772B47122C000E5B3B /* NoticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewModel.swift; sourceTree = "<group>"; };
 		11D31A792B4769AC000E5B3B /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
+		11D31A7B2B476C20000E5B3B /* MoveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				113A2528217C6EF500AB90B9 /* MoveViewController.swift */,
+				11D31A7B2B476C20000E5B3B /* MoveViewModel.swift */,
 			);
 			path = Move;
 			sourceTree = "<group>";
@@ -670,6 +673,7 @@
 				11D31A762B47074A000E5B3B /* FlightTabloidCellViewModel.swift in Sources */,
 				113A2523217C6DE300AB90B9 /* NoticeViewController.swift in Sources */,
 				113A2509217BEA0800AB90B9 /* UIImage+Extension.swift in Sources */,
+				11D31A7C2B476C20000E5B3B /* MoveViewModel.swift in Sources */,
 				115E317B217B2F1E00357D6D /* Event.swift in Sources */,
 				115E319F217B640800357D6D /* JSONDecoder+Extension.swift in Sources */,
 				113A252E217C727E00AB90B9 /* FlightDetailViewControllerProtocol.swift in Sources */,
