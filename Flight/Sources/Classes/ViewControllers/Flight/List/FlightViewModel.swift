@@ -1,7 +1,15 @@
+//
+//  FlightViewModel.swift
+//  Flight
+//
+//  Created by Alexander on 04/01/2024.
+//  Copyright © 2018 Alexander Kadyrov. All rights reserved.
+//
+
 import TabloidView
 import Foundation
 
-final class FlightListViewModel {
+final class FlightViewModel {
     
     private let flightController = FlightController()
     

@@ -25,7 +25,7 @@
 		115E313F217B2D1600357D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115E313E217B2D1600357D6D /* Assets.xcassets */; };
 		115E314D217B2D1600357D6D /* FlightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E314C217B2D1600357D6D /* FlightTests.swift */; };
 		115E3158217B2D1600357D6D /* FlightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E3157217B2D1600357D6D /* FlightUITests.swift */; };
-		115E316C217B2E5700357D6D /* FlightListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E316B217B2E5700357D6D /* FlightListViewController.swift */; };
+		115E316C217B2E5700357D6D /* FlightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E316B217B2E5700357D6D /* FlightViewController.swift */; };
 		115E3174217B2EC300357D6D /* FlightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E3173217B2EC300357D6D /* FlightController.swift */; };
 		115E3177217B2EF200357D6D /* Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E3176217B2EF200357D6D /* Notice.swift */; };
 		115E317B217B2F1E00357D6D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E317A217B2F1E00357D6D /* Event.swift */; };
@@ -41,7 +41,7 @@
 		115E319C217B5DC900357D6D /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E319B217B5DC900357D6D /* Data+Extension.swift */; };
 		115E319F217B640800357D6D /* JSONDecoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E319E217B640800357D6D /* JSONDecoder+Extension.swift */; };
 		11D31A722B4703E4000E5B3B /* TabloidView in Frameworks */ = {isa = PBXBuildFile; productRef = 11D31A712B4703E4000E5B3B /* TabloidView */; };
-		11D31A742B470446000E5B3B /* FlightListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A732B470446000E5B3B /* FlightListViewModel.swift */; };
+		11D31A742B470446000E5B3B /* FlightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A732B470446000E5B3B /* FlightViewModel.swift */; };
 		11D31A762B47074A000E5B3B /* FlightTabloidCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A752B47074A000E5B3B /* FlightTabloidCellViewModel.swift */; };
 		11D31A782B47122C000E5B3B /* NoticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A772B47122C000E5B3B /* NoticeViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -89,7 +89,7 @@
 		115E3153217B2D1600357D6D /* FlightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		115E3157217B2D1600357D6D /* FlightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightUITests.swift; sourceTree = "<group>"; };
 		115E3159217B2D1600357D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		115E316B217B2E5700357D6D /* FlightListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListViewController.swift; sourceTree = "<group>"; };
+		115E316B217B2E5700357D6D /* FlightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightViewController.swift; sourceTree = "<group>"; };
 		115E3173217B2EC300357D6D /* FlightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightController.swift; sourceTree = "<group>"; };
 		115E3176217B2EF200357D6D /* Notice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notice.swift; sourceTree = "<group>"; };
 		115E317A217B2F1E00357D6D /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 		115E3195217B57DA00357D6D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		115E319B217B5DC900357D6D /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
 		115E319E217B640800357D6D /* JSONDecoder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extension.swift"; sourceTree = "<group>"; };
-		11D31A732B470446000E5B3B /* FlightListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListViewModel.swift; sourceTree = "<group>"; };
+		11D31A732B470446000E5B3B /* FlightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightViewModel.swift; sourceTree = "<group>"; };
 		11D31A752B47074A000E5B3B /* FlightTabloidCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTabloidCellViewModel.swift; sourceTree = "<group>"; };
 		11D31A772B47122C000E5B3B /* NoticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -364,8 +364,8 @@
 			isa = PBXGroup;
 			children = (
 				113A2501217BCF8100AB90B9 /* Cell */,
-				115E316B217B2E5700357D6D /* FlightListViewController.swift */,
-				11D31A732B470446000E5B3B /* FlightListViewModel.swift */,
+				115E316B217B2E5700357D6D /* FlightViewController.swift */,
+				11D31A732B470446000E5B3B /* FlightViewModel.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -652,7 +652,7 @@
 				115E3138217B2D1500357D6D /* AppDelegate.swift in Sources */,
 				113A250D217BEAD300AB90B9 /* NavigationController.swift in Sources */,
 				114427B82B4625560044DEBE /* AirplaneView.swift in Sources */,
-				11D31A742B470446000E5B3B /* FlightListViewModel.swift in Sources */,
+				11D31A742B470446000E5B3B /* FlightViewModel.swift in Sources */,
 				115E3177217B2EF200357D6D /* Notice.swift in Sources */,
 				115E3196217B57DA00357D6D /* BaseViewController.swift in Sources */,
 				113A2500217BCF7D00AB90B9 /* FlightTabloidCellView.swift in Sources */,
@@ -661,7 +661,7 @@
 				115E3188217B349A00357D6D /* Date+Extension.swift in Sources */,
 				113A2518217BEEEC00AB90B9 /* String+Extension.swift in Sources */,
 				113A2506217BDA1500AB90B9 /* UIColor+Extension.swift in Sources */,
-				115E316C217B2E5700357D6D /* FlightListViewController.swift in Sources */,
+				115E316C217B2E5700357D6D /* FlightViewController.swift in Sources */,
 				11D31A782B47122C000E5B3B /* NoticeViewModel.swift in Sources */,
 				11D31A762B47074A000E5B3B /* FlightTabloidCellViewModel.swift in Sources */,
 				113A2523217C6DE300AB90B9 /* NoticeViewController.swift in Sources */,

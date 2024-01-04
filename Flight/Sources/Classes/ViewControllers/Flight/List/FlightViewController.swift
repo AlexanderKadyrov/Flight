@@ -1,5 +1,5 @@
 //
-//  FlightListViewController.swift
+//  FlightViewController.swift
 //  Flight
 //
 //  Created by Alexander on 20/10/2018.
@@ -9,7 +9,7 @@
 import TabloidView
 import UIKit
 
-class FlightListViewController: BaseViewController {
+class FlightViewController: BaseViewController {
     
     private lazy var tableView: TabloidView = {
         let view = TabloidView(style: .plain)
@@ -27,7 +27,7 @@ class FlightListViewController: BaseViewController {
         return control
     }()
     
-    var viewModel: FlightListViewModel? {
+    var viewModel: FlightViewModel? {
         didSet {
             tableView.viewModel = viewModel?.tabloidViewModel
         }
