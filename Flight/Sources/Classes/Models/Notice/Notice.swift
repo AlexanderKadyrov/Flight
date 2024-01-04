@@ -26,4 +26,8 @@ extension Notice: FlightProtocol {
         ]
         return values.joined(separator: "\n")
     }
+    
+    var path: Router.Path {
+        return .notice
+    }
 }
