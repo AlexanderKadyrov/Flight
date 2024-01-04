@@ -25,12 +25,27 @@ final class MoveView: UIView {
         return view
     }()
     
+    private let estimateTimeView: EstimateTimeView = {
+        let view = EstimateTimeView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
     private lazy var horizontalStackView: UIStackView = {
-        let view = UIStackView(arrangedSubviews: [takeoffAirplaneView, UIView(), landingAirplaneView])
+        let view = UIStackView(arrangedSubviews: [takeoffAirplaneView, estimateTimeView, landingAirplaneView])
         view.translatesAutoresizingMaskIntoConstraints = false
         view.axis = .horizontal
         return view
     }()
+    
+    var estimateTime: String? {
+        set {
+            estimateTimeView.estimateTime = newValue
+        }
+        get {
+            return estimateTimeView.estimateTime
+        }
+    }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)

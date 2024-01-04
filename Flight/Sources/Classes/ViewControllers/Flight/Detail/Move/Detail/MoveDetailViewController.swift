@@ -10,13 +10,6 @@ import UIKit
 
 class MoveDetailViewController: BaseViewController, FlightDetailViewControllerProtocol {
     
-    /*
-    @IBOutlet private weak var viewContainerAirplaneTakeoff: UIView!
-    @IBOutlet private weak var viewContainerAirplaneLanding: UIView!
-    @IBOutlet private weak var labelFromPlace: UILabel!
-    @IBOutlet private weak var labelToPlace: UILabel!
-    @IBOutlet private weak var labelTime: UILabel!*/
-    
     private let moveView: MoveView = {
         let view = MoveView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -44,9 +37,9 @@ class MoveDetailViewController: BaseViewController, FlightDetailViewControllerPr
     var item: FlightProtocol? {
         didSet {
             guard let item = item as? Move else { return }
+            moveView.estimateTime = item.estimateTime.toString
             fromPlaceLabel.text = item.fromPlace
             toPlaceLabel.text = item.toPlace
-            //labelTime.text = item.estimateTime.toString
         }
     }
     
