@@ -46,6 +46,8 @@
 		11D31A782B47122C000E5B3B /* NoticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A772B47122C000E5B3B /* NoticeViewModel.swift */; };
 		11D31A7A2B4769AC000E5B3B /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A792B4769AC000E5B3B /* EventViewModel.swift */; };
 		11D31A7C2B476C20000E5B3B /* MoveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A7B2B476C20000E5B3B /* MoveViewModel.swift */; };
+		11D31A7F2B476DA9000E5B3B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A7E2B476DA9000E5B3B /* Router.swift */; };
+		11D31A812B476DC9000E5B3B /* RouterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A802B476DC9000E5B3B /* RouterFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +113,8 @@
 		11D31A772B47122C000E5B3B /* NoticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewModel.swift; sourceTree = "<group>"; };
 		11D31A792B4769AC000E5B3B /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
 		11D31A7B2B476C20000E5B3B /* MoveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveViewModel.swift; sourceTree = "<group>"; };
+		11D31A7E2B476DA9000E5B3B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		11D31A802B476DC9000E5B3B /* RouterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -324,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				113A250B217BEAAD00AB90B9 /* Navigation */,
+				11D31A7D2B476D8C000E5B3B /* Router */,
 				115E3172217B2EB000357D6D /* Flight */,
 				115E3168217B2DE600357D6D /* Base */,
 			);
@@ -502,6 +507,15 @@
 			path = Decoder;
 			sourceTree = "<group>";
 		};
+		11D31A7D2B476D8C000E5B3B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				11D31A802B476DC9000E5B3B /* RouterFactory.swift */,
+				11D31A7E2B476DA9000E5B3B /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -648,7 +662,9 @@
 				114427BF2B462FBC0044DEBE /* EstimateTimeView.swift in Sources */,
 				115E318B217B3AD700357D6D /* TimeInterval+Extension.swift in Sources */,
 				114427BC2B4629A70044DEBE /* MoveView.swift in Sources */,
+				11D31A7F2B476DA9000E5B3B /* Router.swift in Sources */,
 				115E3138217B2D1500357D6D /* AppDelegate.swift in Sources */,
+				11D31A812B476DC9000E5B3B /* RouterFactory.swift in Sources */,
 				113A250D217BEAD300AB90B9 /* NavigationController.swift in Sources */,
 				114427B82B4625560044DEBE /* AirplaneView.swift in Sources */,
 				11D31A742B470446000E5B3B /* FlightViewModel.swift in Sources */,
