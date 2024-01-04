@@ -1,5 +1,5 @@
 //
-//  NoticeDetailViewController.swift
+//  NoticeViewController.swift
 //  Flight
 //
 //  Created by Alexander on 21/10/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NoticeDetailViewController: BaseViewController, FlightDetailViewControllerProtocol {
+class NoticeViewController: BaseViewController, FlightDetailViewControllerProtocol {
     
     private let titleLabel: UILabel = {
         let label = UILabel()
