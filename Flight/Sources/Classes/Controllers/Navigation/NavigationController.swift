@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NavigationViewController: UINavigationController {
+class NavigationController: UINavigationController {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -18,13 +18,13 @@ class NavigationViewController: UINavigationController {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
-    init(_ rootViewController: UIViewController, color: UIColor = .white) {
+    init(rootViewController: UIViewController, color: UIColor = .white) {
         super.init(rootViewController: rootViewController)
         self.navigationBar.isTranslucent = false
         self.navigationBar.setBackgroundImage(UIImage(color: color), for: .default)
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        return (self.topViewController?.preferredStatusBarStyle)!
+        return self.topViewController?.preferredStatusBarStyle ?? .default
     }
 }

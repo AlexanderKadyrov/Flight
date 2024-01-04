@@ -9,15 +9,17 @@
 import Foundation
 
 extension Data {
-    static func resource(_ name: String) -> Data? {
-        if let url = Bundle.main.url(forResource: name, withExtension: "json") {
-            do {
-                let data = try Data(contentsOf: url, options: .mappedIfSafe)
-                return data
-            } catch {
-                return nil
-            }
+    
+    private enum Errors: Error {
+        case resourceNotFound
+    }
+    
+    static func resource(name: String) throws -> Data {
+        guard
+            let url = Bundle.main.url(forResource: name, withExtension: "json")
+        else {
+            throw Errors.resourceNotFound
         }
-        return nil
+        return try Data(contentsOf: url)
     }
 }

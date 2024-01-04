@@ -7,11 +7,10 @@
 //
 
 import Foundation
-import UIKit
 
 struct Notice: Codable {
-    var flightDate: Date?
-    var gate: String?
+    let flightDate: Date
+    let gate: String
 }
 
 extension Notice: FlightProtocol {
@@ -21,13 +20,10 @@ extension Notice: FlightProtocol {
     }
     
     var subtitle: String {
-        var values = [String]()
-        if let thisFlightDate = flightDate {
-            values.append(thisFlightDate.toString(.formatterDate))
-        }
-        if let thisGate = gate, !thisGate.isEmpty {
-            values.append(thisGate)
-        }
+        let values: [String] = [
+            flightDate.toString(.formatterDate),
+            gate
+        ]
         return values.joined(separator: "\n")
     }
 }

@@ -11,30 +11,27 @@ import UIKit
 class BaseViewController: UIViewController {
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
     }
     
     init() {
-        super.init(nibName: String(describing: type(of: self)), bundle: nil)
+        super.init(nibName: nil, bundle: nil)
     }
     
-    //настраиваем стили и/или логику
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .colorOnyx
     }
     
-    func setBarTitle(_ text: String) {
-        let navigationTitleFont = UIFont.boldSystemFont(ofSize: 21)
-        self.navigationController?.navigationBar.titleTextAttributes = [
-            NSAttributedString.Key.font: navigationTitleFont,
+    func setNavigationBar(text: String) {
+        navigationController?.navigationBar.titleTextAttributes = [
+            NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 21),
             NSAttributedString.Key.foregroundColor: UIColor.white
         ]
-        self.title = text
+        title = text
     }
     
-    //настраиваем стиль statusBar
-    internal override var preferredStatusBarStyle: UIStatusBarStyle {
+    override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
 }
