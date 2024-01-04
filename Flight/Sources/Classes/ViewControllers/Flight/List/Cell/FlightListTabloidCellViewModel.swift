@@ -17,7 +17,7 @@ final class FlightListTabloidCellViewModel: TabloidCellViewModel {
     
     let model: FlightProtocol
     
-    init(cellIdentifier: String, model: FlightProtocol) {
+    init(model: FlightProtocol) {
         self.model = model
         super.init(cellIdentifier: Constants.cellIdentifier)
     }
