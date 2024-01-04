@@ -1,5 +1,5 @@
 //
-//  FlightListTableViewCell.swift
+//  FlightTabloidCellView.swift
 //  Flight
 //
 //  Created by Alexander on 21/10/2018.
@@ -9,7 +9,7 @@
 import TabloidView
 import UIKit
 
-final class FlightListTabloidCellView: TabloidCellView {
+final class FlightTabloidCellView: TabloidCellView {
     
     private let containerView: UIView = {
         let view = UIView()

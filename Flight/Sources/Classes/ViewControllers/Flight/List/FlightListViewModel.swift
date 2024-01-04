@@ -5,10 +5,10 @@ final class FlightListViewModel {
     
     private let flightController = FlightController()
     
-    private var sections: [[FlightListTabloidCellViewModel]] {
+    private var sections: [[FlightTabloidCellViewModel]] {
         let cellViewModels = flightController
             .rndItems()
-            .map { FlightListTabloidCellViewModel(model: $0) }
+            .map { FlightTabloidCellViewModel(model: $0) }
         return [cellViewModels]
     }
     

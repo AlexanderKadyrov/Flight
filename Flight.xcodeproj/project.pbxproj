@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		113A2500217BCF7D00AB90B9 /* FlightListTabloidCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A24FF217BCF7D00AB90B9 /* FlightListTabloidCellView.swift */; };
+		113A2500217BCF7D00AB90B9 /* FlightTabloidCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A24FF217BCF7D00AB90B9 /* FlightTabloidCellView.swift */; };
 		113A2506217BDA1500AB90B9 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A2505217BDA1500AB90B9 /* UIColor+Extension.swift */; };
 		113A2509217BEA0800AB90B9 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A2508217BEA0800AB90B9 /* UIImage+Extension.swift */; };
 		113A250D217BEAD300AB90B9 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A250C217BEAD300AB90B9 /* NavigationController.swift */; };
@@ -42,7 +42,7 @@
 		115E319F217B640800357D6D /* JSONDecoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E319E217B640800357D6D /* JSONDecoder+Extension.swift */; };
 		11D31A722B4703E4000E5B3B /* TabloidView in Frameworks */ = {isa = PBXBuildFile; productRef = 11D31A712B4703E4000E5B3B /* TabloidView */; };
 		11D31A742B470446000E5B3B /* FlightListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A732B470446000E5B3B /* FlightListViewModel.swift */; };
-		11D31A762B47074A000E5B3B /* FlightListTabloidCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A752B47074A000E5B3B /* FlightListTabloidCellViewModel.swift */; };
+		11D31A762B47074A000E5B3B /* FlightTabloidCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A752B47074A000E5B3B /* FlightTabloidCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		113A24FF217BCF7D00AB90B9 /* FlightListTabloidCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListTabloidCellView.swift; sourceTree = "<group>"; };
+		113A24FF217BCF7D00AB90B9 /* FlightTabloidCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTabloidCellView.swift; sourceTree = "<group>"; };
 		113A2505217BDA1500AB90B9 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		113A2508217BEA0800AB90B9 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		113A250C217BEAD300AB90B9 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 		115E319B217B5DC900357D6D /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
 		115E319E217B640800357D6D /* JSONDecoder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extension.swift"; sourceTree = "<group>"; };
 		11D31A732B470446000E5B3B /* FlightListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListViewModel.swift; sourceTree = "<group>"; };
-		11D31A752B47074A000E5B3B /* FlightListTabloidCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListTabloidCellViewModel.swift; sourceTree = "<group>"; };
+		11D31A752B47074A000E5B3B /* FlightTabloidCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTabloidCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,8 +136,8 @@
 		113A2501217BCF8100AB90B9 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				113A24FF217BCF7D00AB90B9 /* FlightListTabloidCellView.swift */,
-				11D31A752B47074A000E5B3B /* FlightListTabloidCellViewModel.swift */,
+				113A24FF217BCF7D00AB90B9 /* FlightTabloidCellView.swift */,
+				11D31A752B47074A000E5B3B /* FlightTabloidCellViewModel.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -652,14 +652,14 @@
 				11D31A742B470446000E5B3B /* FlightListViewModel.swift in Sources */,
 				115E3177217B2EF200357D6D /* Notice.swift in Sources */,
 				115E3196217B57DA00357D6D /* BaseViewController.swift in Sources */,
-				113A2500217BCF7D00AB90B9 /* FlightListTabloidCellView.swift in Sources */,
+				113A2500217BCF7D00AB90B9 /* FlightTabloidCellView.swift in Sources */,
 				115E319C217B5DC900357D6D /* Data+Extension.swift in Sources */,
 				115E317E217B2F3900357D6D /* Move.swift in Sources */,
 				115E3188217B349A00357D6D /* Date+Extension.swift in Sources */,
 				113A2518217BEEEC00AB90B9 /* String+Extension.swift in Sources */,
 				113A2506217BDA1500AB90B9 /* UIColor+Extension.swift in Sources */,
 				115E316C217B2E5700357D6D /* FlightListViewController.swift in Sources */,
-				11D31A762B47074A000E5B3B /* FlightListTabloidCellViewModel.swift in Sources */,
+				11D31A762B47074A000E5B3B /* FlightTabloidCellViewModel.swift in Sources */,
 				113A2523217C6DE300AB90B9 /* NoticeViewController.swift in Sources */,
 				113A2509217BEA0800AB90B9 /* UIImage+Extension.swift in Sources */,
 				115E317B217B2F1E00357D6D /* Event.swift in Sources */,

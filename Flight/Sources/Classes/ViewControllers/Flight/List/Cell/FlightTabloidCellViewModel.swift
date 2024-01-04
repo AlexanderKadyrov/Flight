@@ -1,5 +1,5 @@
 //
-//  FlightListTabloidCellViewModel.swift
+//  FlightTabloidCellViewModel.swift
 //  Flight
 //
 //  Created by Alexander on 04.01.2024.
@@ -9,10 +9,10 @@
 import TabloidView
 import Foundation
 
-final class FlightListTabloidCellViewModel: TabloidCellViewModel {
+final class FlightTabloidCellViewModel: TabloidCellViewModel {
     
     private enum Constants {
-        static let cellIdentifier = "FlightListTabloidCellView"
+        static let cellIdentifier = "FlightTabloidCellView"
     }
     
     let model: FlightProtocol
