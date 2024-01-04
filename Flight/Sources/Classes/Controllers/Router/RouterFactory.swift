@@ -30,22 +30,24 @@ final class RouterFactory {
     
     private func noticeViewController(model: FlightProtocol) -> UIViewController {
         let viewController = NoticeViewController()
-        let viewModel = NoticeViewModel(model: Notice(flightDate: Date(), gate: ""))
+        let viewModel = NoticeViewModel()
         viewModel.model = model as? Notice
         viewController.viewModel = viewModel
         return viewController
     }
     
-    private func eventViewController(model: Event) -> UIViewController {
+    private func eventViewController(model: FlightProtocol) -> UIViewController {
         let viewController = EventViewController()
-        let viewModel = EventViewModel(model: model)
+        let viewModel = EventViewModel()
+        viewModel.model = model as? Event
         viewController.viewModel = viewModel
         return viewController
     }
     
-    private func moveViewController(model: Move) -> UIViewController {
+    private func moveViewController(model: FlightProtocol) -> UIViewController {
         let viewController = MoveViewController()
-        let viewModel = MoveViewModel(model: model)
+        let viewModel = MoveViewModel()
+        viewModel.model = model as? Move
         viewController.viewModel = viewModel
         return viewController
     }

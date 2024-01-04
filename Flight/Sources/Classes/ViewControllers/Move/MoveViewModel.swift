@@ -8,15 +8,17 @@
 
 import Foundation
 
-final class MoveViewModel {
+final class MoveViewModel: ViewModelProtocol {
     
-    let estimateTime: String
-    let fromPlace: String
-    let toPlace: String
+    private(set) var estimateTime: String?
+    private(set) var fromPlace: String?
+    private(set) var toPlace: String?
     
-    init(model: Move) {
-        estimateTime = model.estimateTime.toString
-        fromPlace = model.fromPlace
-        toPlace = model.toPlace
+    var model: Move? {
+        didSet {
+            estimateTime = model?.estimateTime.toString
+            fromPlace = model?.fromPlace
+            toPlace = model?.toPlace
+        }
     }
 }
