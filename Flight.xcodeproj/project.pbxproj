@@ -354,20 +354,20 @@
 				113A2520217C6DB700AB90B9 /* Notice */,
 				113A251A217C6C1700AB90B9 /* Event */,
 				113A2526217C6EB400AB90B9 /* Move */,
-				115E316E217B2E6F00357D6D /* List */,
+				115E316E217B2E6F00357D6D /* Flight */,
 				115E3194217B57BC00357D6D /* Base */,
 			);
 			path = Flight;
 			sourceTree = "<group>";
 		};
-		115E316E217B2E6F00357D6D /* List */ = {
+		115E316E217B2E6F00357D6D /* Flight */ = {
 			isa = PBXGroup;
 			children = (
 				113A2501217BCF8100AB90B9 /* Cell */,
 				115E316B217B2E5700357D6D /* FlightViewController.swift */,
 				11D31A732B470446000E5B3B /* FlightViewModel.swift */,
 			);
-			path = List;
+			path = Flight;
 			sourceTree = "<group>";
 		};
 		115E3172217B2EB000357D6D /* Flight */ = {
