@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MoveDetailViewController: BaseViewController, FlightDetailViewControllerProtocol {
+class MoveViewController: BaseViewController, FlightDetailViewControllerProtocol {
     
     private let moveView: MoveView = {
         let view = MoveView()
