@@ -43,6 +43,7 @@
 		11D31A722B4703E4000E5B3B /* TabloidView in Frameworks */ = {isa = PBXBuildFile; productRef = 11D31A712B4703E4000E5B3B /* TabloidView */; };
 		11D31A742B470446000E5B3B /* FlightListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A732B470446000E5B3B /* FlightListViewModel.swift */; };
 		11D31A762B47074A000E5B3B /* FlightTabloidCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A752B47074A000E5B3B /* FlightTabloidCellViewModel.swift */; };
+		11D31A782B47122C000E5B3B /* NoticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A772B47122C000E5B3B /* NoticeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		115E319E217B640800357D6D /* JSONDecoder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extension.swift"; sourceTree = "<group>"; };
 		11D31A732B470446000E5B3B /* FlightListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListViewModel.swift; sourceTree = "<group>"; };
 		11D31A752B47074A000E5B3B /* FlightTabloidCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTabloidCellViewModel.swift; sourceTree = "<group>"; };
+		11D31A772B47122C000E5B3B /* NoticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				113A2522217C6DE300AB90B9 /* NoticeViewController.swift */,
+				11D31A772B47122C000E5B3B /* NoticeViewModel.swift */,
 			);
 			path = Notice;
 			sourceTree = "<group>";
@@ -659,6 +662,7 @@
 				113A2518217BEEEC00AB90B9 /* String+Extension.swift in Sources */,
 				113A2506217BDA1500AB90B9 /* UIColor+Extension.swift in Sources */,
 				115E316C217B2E5700357D6D /* FlightListViewController.swift in Sources */,
+				11D31A782B47122C000E5B3B /* NoticeViewModel.swift in Sources */,
 				11D31A762B47074A000E5B3B /* FlightTabloidCellViewModel.swift in Sources */,
 				113A2523217C6DE300AB90B9 /* NoticeViewController.swift in Sources */,
 				113A2509217BEA0800AB90B9 /* UIImage+Extension.swift in Sources */,
