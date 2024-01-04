@@ -162,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				115E316D217B2E6000357D6D /* Flight */,
+				113A252D217C727E00AB90B9 /* FlightDetailViewControllerProtocol.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -212,17 +213,6 @@
 				113A2528217C6EF500AB90B9 /* MoveDetailViewController.swift */,
 			);
 			path = Move;
-			sourceTree = "<group>";
-		};
-		113A252C217C725400AB90B9 /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-				113A2526217C6EB400AB90B9 /* Move */,
-				113A251A217C6C1700AB90B9 /* Event */,
-				113A2520217C6DB700AB90B9 /* Notice */,
-				113A252D217C727E00AB90B9 /* FlightDetailViewControllerProtocol.swift */,
-			);
-			path = Detail;
 			sourceTree = "<group>";
 		};
 		114427B92B46257B0044DEBE /* AirplaneView */ = {
@@ -358,8 +348,10 @@
 		115E316D217B2E6000357D6D /* Flight */ = {
 			isa = PBXGroup;
 			children = (
+				113A2520217C6DB700AB90B9 /* Notice */,
+				113A251A217C6C1700AB90B9 /* Event */,
+				113A2526217C6EB400AB90B9 /* Move */,
 				115E316E217B2E6F00357D6D /* List */,
-				113A252C217C725400AB90B9 /* Detail */,
 				115E3194217B57BC00357D6D /* Base */,
 			);
 			path = Flight;
