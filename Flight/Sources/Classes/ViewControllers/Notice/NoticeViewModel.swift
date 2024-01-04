@@ -8,13 +8,20 @@
 
 import Foundation
 
-final class NoticeViewModel {
+protocol ViewModelProtocol {
+    associatedtype M: FlightProtocol
+    var model: M? { get set }
+}
+
+final class NoticeViewModel: ViewModelProtocol {
     
-    let flightDate: String
-    let gate: String
+    private(set) var flightDate: String?
+    private(set) var gate: String?
     
-    init(model: Notice) {
-        flightDate = model.flightDate.toString(.formatterDate)
-        gate = model.gate
+    var model: Notice? {
+        didSet {
+            flightDate = model?.flightDate.toString(.formatterDate)
+            gate = model?.gate
+        }
     }
 }
