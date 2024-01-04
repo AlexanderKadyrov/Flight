@@ -1,3 +1,11 @@
+//
+//  MoveView.swift
+//  Flight
+//
+//  Created by Alexander on 04.01.2024.
+//  Copyright © 2024 Alexander Kadyrov. All rights reserved.
+//
+
 import Foundation
 import UIKit
 
