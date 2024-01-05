@@ -1,5 +1,5 @@
 //
-//  EventDetailViewController.swift
+//  EventViewController.swift
 //  Flight
 //
 //  Created by Alexander on 21/10/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class EventDetailViewController: BaseViewController, FlightDetailViewControllerProtocol {
+final class EventViewController: BaseViewController {
     
     private let containerView: UIView = {
         let view = UIView()
@@ -46,16 +46,12 @@ final class EventDetailViewController: BaseViewController, FlightDetailViewContr
         return label
     }()
     
-    var item: FlightProtocol? {
+    var viewModel: EventViewModel? {
         didSet {
-            guard let item = item as? Event else { return }
-            setNavigationBar(text: item.name)
-            
-            let nameLogo = "icon_logo_" + item.airline.rawValue
-            logoImageView.image = UIImage(named: nameLogo)
-            
-            startTimeLabel.text = "event_start_time_title".localized() + ": " + item.startTime.toString(.formatterTime)
-            endTimeLabel.text = "event_end_time_title".localized() + ": " + item.endTime.toString(.formatterTime)
+            setNavigationBar(text: viewModel?.name ?? "")
+            logoImageView.image = viewModel?.logoImage
+            startTimeLabel.text = viewModel?.startTime
+            endTimeLabel.text = viewModel?.endTime
         }
     }
     

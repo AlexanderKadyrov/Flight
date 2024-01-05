@@ -15,8 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let viewController = FlightListViewController()
+        let viewController = FlightViewController()
+        let viewModel = FlightViewModel()
+        viewController.viewModel = viewModel
+        
         let navigationController = NavigationController(rootViewController: viewController, color: .colorOnyx)
+        let router = Router(rootViewController: navigationController)
+        
+        viewModel.router = router
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navigationController

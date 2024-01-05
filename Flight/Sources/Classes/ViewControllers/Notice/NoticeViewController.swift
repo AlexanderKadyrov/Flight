@@ -1,5 +1,5 @@
 //
-//  NoticeDetailViewController.swift
+//  NoticeViewController.swift
 //  Flight
 //
 //  Created by Alexander on 21/10/2018.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-class NoticeDetailViewController: BaseViewController, FlightDetailViewControllerProtocol {
+class NoticeViewController: BaseViewController {
     
-    private let titleLabel: UILabel = {
+    private let gateLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 51, weight: .medium)
@@ -22,7 +22,7 @@ class NoticeDetailViewController: BaseViewController, FlightDetailViewController
         return label
     }()
     
-    private let subtitleLabel: UILabel = {
+    private let flightDateLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 21)
@@ -31,11 +31,10 @@ class NoticeDetailViewController: BaseViewController, FlightDetailViewController
         return label
     }()
     
-    var item: FlightProtocol? {
+    var viewModel: NoticeViewModel? {
         didSet {
-            guard let item = item as? Notice else { return }
-            titleLabel.text = item.gate
-            subtitleLabel.text = item.flightDate.toString(.formatterDate)
+            gateLabel.text = viewModel?.gate
+            flightDateLabel.text = viewModel?.flightDate
         }
     }
     
@@ -50,19 +49,19 @@ class NoticeDetailViewController: BaseViewController, FlightDetailViewController
     }
     
     private func configureViews() {
-        view.addSubview(titleLabel)
-        view.addSubview(subtitleLabel)
+        view.addSubview(gateLabel)
+        view.addSubview(flightDateLabel)
         
         NSLayoutConstraint.activate([
-            titleLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -64),
-            titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            titleLabel.heightAnchor.constraint(equalToConstant: 140),
-            titleLabel.widthAnchor.constraint(equalToConstant: 140),
+            gateLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -64),
+            gateLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            gateLabel.heightAnchor.constraint(equalToConstant: 140),
+            gateLabel.widthAnchor.constraint(equalToConstant: 140),
             
-            subtitleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
-            subtitleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-            subtitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8),
-            subtitleLabel.heightAnchor.constraint(equalToConstant: 45)
+            flightDateLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            flightDateLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            flightDateLabel.topAnchor.constraint(equalTo: gateLabel.bottomAnchor, constant: 8),
+            flightDateLabel.heightAnchor.constraint(equalToConstant: 45)
         ])
     }
 }

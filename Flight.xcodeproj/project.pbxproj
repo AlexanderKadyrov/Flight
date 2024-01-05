@@ -3,19 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		113A2500217BCF7D00AB90B9 /* FlightListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A24FF217BCF7D00AB90B9 /* FlightListTableViewCell.swift */; };
+		113A2500217BCF7D00AB90B9 /* FlightTabloidCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A24FF217BCF7D00AB90B9 /* FlightTabloidCellView.swift */; };
 		113A2506217BDA1500AB90B9 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A2505217BDA1500AB90B9 /* UIColor+Extension.swift */; };
 		113A2509217BEA0800AB90B9 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A2508217BEA0800AB90B9 /* UIImage+Extension.swift */; };
 		113A250D217BEAD300AB90B9 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A250C217BEAD300AB90B9 /* NavigationController.swift */; };
 		113A2511217BEDB600AB90B9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 113A2513217BEDB600AB90B9 /* Localizable.strings */; };
 		113A2518217BEEEC00AB90B9 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A2517217BEEEC00AB90B9 /* String+Extension.swift */; };
-		113A251D217C6C5100AB90B9 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A251C217C6C5000AB90B9 /* EventDetailViewController.swift */; };
-		113A2523217C6DE300AB90B9 /* NoticeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A2522217C6DE300AB90B9 /* NoticeDetailViewController.swift */; };
-		113A2529217C6EF500AB90B9 /* MoveDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A2528217C6EF500AB90B9 /* MoveDetailViewController.swift */; };
+		113A251D217C6C5100AB90B9 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A251C217C6C5000AB90B9 /* EventViewController.swift */; };
+		113A2523217C6DE300AB90B9 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A2522217C6DE300AB90B9 /* NoticeViewController.swift */; };
+		113A2529217C6EF500AB90B9 /* MoveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A2528217C6EF500AB90B9 /* MoveViewController.swift */; };
 		113A252E217C727E00AB90B9 /* FlightDetailViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A252D217C727E00AB90B9 /* FlightDetailViewControllerProtocol.swift */; };
 		113A2530217C7C9300AB90B9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113A252F217C7C9300AB90B9 /* LaunchScreen.xib */; };
 		114427B82B4625560044DEBE /* AirplaneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114427B72B4625560044DEBE /* AirplaneView.swift */; };
@@ -25,7 +25,7 @@
 		115E313F217B2D1600357D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115E313E217B2D1600357D6D /* Assets.xcassets */; };
 		115E314D217B2D1600357D6D /* FlightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E314C217B2D1600357D6D /* FlightTests.swift */; };
 		115E3158217B2D1600357D6D /* FlightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E3157217B2D1600357D6D /* FlightUITests.swift */; };
-		115E316C217B2E5700357D6D /* FlightListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E316B217B2E5700357D6D /* FlightListViewController.swift */; };
+		115E316C217B2E5700357D6D /* FlightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E316B217B2E5700357D6D /* FlightViewController.swift */; };
 		115E3174217B2EC300357D6D /* FlightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E3173217B2EC300357D6D /* FlightController.swift */; };
 		115E3177217B2EF200357D6D /* Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E3176217B2EF200357D6D /* Notice.swift */; };
 		115E317B217B2F1E00357D6D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E317A217B2F1E00357D6D /* Event.swift */; };
@@ -40,6 +40,16 @@
 		115E3196217B57DA00357D6D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E3195217B57DA00357D6D /* BaseViewController.swift */; };
 		115E319C217B5DC900357D6D /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E319B217B5DC900357D6D /* Data+Extension.swift */; };
 		115E319F217B640800357D6D /* JSONDecoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E319E217B640800357D6D /* JSONDecoder+Extension.swift */; };
+		11D31A722B4703E4000E5B3B /* TabloidView in Frameworks */ = {isa = PBXBuildFile; productRef = 11D31A712B4703E4000E5B3B /* TabloidView */; };
+		11D31A742B470446000E5B3B /* FlightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A732B470446000E5B3B /* FlightViewModel.swift */; };
+		11D31A762B47074A000E5B3B /* FlightTabloidCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A752B47074A000E5B3B /* FlightTabloidCellViewModel.swift */; };
+		11D31A782B47122C000E5B3B /* NoticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A772B47122C000E5B3B /* NoticeViewModel.swift */; };
+		11D31A7A2B4769AC000E5B3B /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A792B4769AC000E5B3B /* EventViewModel.swift */; };
+		11D31A7C2B476C20000E5B3B /* MoveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A7B2B476C20000E5B3B /* MoveViewModel.swift */; };
+		11D31A7F2B476DA9000E5B3B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A7E2B476DA9000E5B3B /* Router.swift */; };
+		11D31A812B476DC9000E5B3B /* RouterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A802B476DC9000E5B3B /* RouterFactory.swift */; };
+		11D31A832B47726F000E5B3B /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A822B47726F000E5B3B /* ViewModelProtocol.swift */; };
+		11D31A862B47796F000E5B3B /* FlightTabloidCellViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31A852B47796F000E5B3B /* FlightTabloidCellViewModelFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,16 +70,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		113A24FF217BCF7D00AB90B9 /* FlightListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListTableViewCell.swift; sourceTree = "<group>"; };
+		113A24FF217BCF7D00AB90B9 /* FlightTabloidCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTabloidCellView.swift; sourceTree = "<group>"; };
 		113A2505217BDA1500AB90B9 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		113A2508217BEA0800AB90B9 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		113A250C217BEAD300AB90B9 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		113A2514217BEDC200AB90B9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		113A2515217BEDD200AB90B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		113A2517217BEEEC00AB90B9 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
-		113A251C217C6C5000AB90B9 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
-		113A2522217C6DE300AB90B9 /* NoticeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeDetailViewController.swift; sourceTree = "<group>"; };
-		113A2528217C6EF500AB90B9 /* MoveDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveDetailViewController.swift; sourceTree = "<group>"; };
+		113A251C217C6C5000AB90B9 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		113A2522217C6DE300AB90B9 /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
+		113A2528217C6EF500AB90B9 /* MoveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveViewController.swift; sourceTree = "<group>"; };
 		113A252D217C727E00AB90B9 /* FlightDetailViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailViewControllerProtocol.swift; sourceTree = "<group>"; };
 		113A252F217C7C9300AB90B9 /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		114427B72B4625560044DEBE /* AirplaneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirplaneView.swift; sourceTree = "<group>"; };
@@ -85,7 +95,7 @@
 		115E3153217B2D1600357D6D /* FlightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		115E3157217B2D1600357D6D /* FlightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightUITests.swift; sourceTree = "<group>"; };
 		115E3159217B2D1600357D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		115E316B217B2E5700357D6D /* FlightListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListViewController.swift; sourceTree = "<group>"; };
+		115E316B217B2E5700357D6D /* FlightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightViewController.swift; sourceTree = "<group>"; };
 		115E3173217B2EC300357D6D /* FlightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightController.swift; sourceTree = "<group>"; };
 		115E3176217B2EF200357D6D /* Notice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notice.swift; sourceTree = "<group>"; };
 		115E317A217B2F1E00357D6D /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -100,6 +110,15 @@
 		115E3195217B57DA00357D6D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		115E319B217B5DC900357D6D /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
 		115E319E217B640800357D6D /* JSONDecoder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extension.swift"; sourceTree = "<group>"; };
+		11D31A732B470446000E5B3B /* FlightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightViewModel.swift; sourceTree = "<group>"; };
+		11D31A752B47074A000E5B3B /* FlightTabloidCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTabloidCellViewModel.swift; sourceTree = "<group>"; };
+		11D31A772B47122C000E5B3B /* NoticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewModel.swift; sourceTree = "<group>"; };
+		11D31A792B4769AC000E5B3B /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
+		11D31A7B2B476C20000E5B3B /* MoveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveViewModel.swift; sourceTree = "<group>"; };
+		11D31A7E2B476DA9000E5B3B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		11D31A802B476DC9000E5B3B /* RouterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterFactory.swift; sourceTree = "<group>"; };
+		11D31A822B47726F000E5B3B /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		11D31A852B47796F000E5B3B /* FlightTabloidCellViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTabloidCellViewModelFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11D31A722B4703E4000E5B3B /* TabloidView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +150,9 @@
 		113A2501217BCF8100AB90B9 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				113A24FF217BCF7D00AB90B9 /* FlightListTableViewCell.swift */,
+				113A24FF217BCF7D00AB90B9 /* FlightTabloidCellView.swift */,
+				11D31A752B47074A000E5B3B /* FlightTabloidCellViewModel.swift */,
+				11D31A852B47796F000E5B3B /* FlightTabloidCellViewModelFactory.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -154,7 +176,13 @@
 		113A250A217BEA9D00AB90B9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				115E316D217B2E6000357D6D /* Flight */,
+				113A2520217C6DB700AB90B9 /* Notice */,
+				113A251A217C6C1700AB90B9 /* Event */,
+				113A2526217C6EB400AB90B9 /* Move */,
+				115E316E217B2E6F00357D6D /* Flight */,
+				115E3194217B57BC00357D6D /* Base */,
+				113A252D217C727E00AB90B9 /* FlightDetailViewControllerProtocol.swift */,
+				11D31A822B47726F000E5B3B /* ViewModelProtocol.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -186,7 +214,8 @@
 		113A251A217C6C1700AB90B9 /* Event */ = {
 			isa = PBXGroup;
 			children = (
-				113A251C217C6C5000AB90B9 /* EventDetailViewController.swift */,
+				113A251C217C6C5000AB90B9 /* EventViewController.swift */,
+				11D31A792B4769AC000E5B3B /* EventViewModel.swift */,
 			);
 			path = Event;
 			sourceTree = "<group>";
@@ -194,7 +223,8 @@
 		113A2520217C6DB700AB90B9 /* Notice */ = {
 			isa = PBXGroup;
 			children = (
-				113A2522217C6DE300AB90B9 /* NoticeDetailViewController.swift */,
+				113A2522217C6DE300AB90B9 /* NoticeViewController.swift */,
+				11D31A772B47122C000E5B3B /* NoticeViewModel.swift */,
 			);
 			path = Notice;
 			sourceTree = "<group>";
@@ -202,20 +232,10 @@
 		113A2526217C6EB400AB90B9 /* Move */ = {
 			isa = PBXGroup;
 			children = (
-				113A2528217C6EF500AB90B9 /* MoveDetailViewController.swift */,
+				113A2528217C6EF500AB90B9 /* MoveViewController.swift */,
+				11D31A7B2B476C20000E5B3B /* MoveViewModel.swift */,
 			);
 			path = Move;
-			sourceTree = "<group>";
-		};
-		113A252C217C725400AB90B9 /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-				113A2526217C6EB400AB90B9 /* Move */,
-				113A251A217C6C1700AB90B9 /* Event */,
-				113A2520217C6DB700AB90B9 /* Notice */,
-				113A252D217C727E00AB90B9 /* FlightDetailViewControllerProtocol.swift */,
-			);
-			path = Detail;
 			sourceTree = "<group>";
 		};
 		114427B92B46257B0044DEBE /* AirplaneView */ = {
@@ -314,6 +334,7 @@
 			isa = PBXGroup;
 			children = (
 				113A250B217BEAAD00AB90B9 /* Navigation */,
+				11D31A7D2B476D8C000E5B3B /* Router */,
 				115E3172217B2EB000357D6D /* Flight */,
 				115E3168217B2DE600357D6D /* Base */,
 			);
@@ -348,23 +369,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		115E316D217B2E6000357D6D /* Flight */ = {
-			isa = PBXGroup;
-			children = (
-				115E316E217B2E6F00357D6D /* List */,
-				113A252C217C725400AB90B9 /* Detail */,
-				115E3194217B57BC00357D6D /* Base */,
-			);
-			path = Flight;
-			sourceTree = "<group>";
-		};
-		115E316E217B2E6F00357D6D /* List */ = {
+		115E316E217B2E6F00357D6D /* Flight */ = {
 			isa = PBXGroup;
 			children = (
 				113A2501217BCF8100AB90B9 /* Cell */,
-				115E316B217B2E5700357D6D /* FlightListViewController.swift */,
+				115E316B217B2E5700357D6D /* FlightViewController.swift */,
+				11D31A732B470446000E5B3B /* FlightViewModel.swift */,
 			);
-			path = List;
+			name = Flight;
+			path = Flight/Flight;
 			sourceTree = "<group>";
 		};
 		115E3172217B2EB000357D6D /* Flight */ = {
@@ -500,6 +513,15 @@
 			path = Decoder;
 			sourceTree = "<group>";
 		};
+		11D31A7D2B476D8C000E5B3B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				11D31A802B476DC9000E5B3B /* RouterFactory.swift */,
+				11D31A7E2B476DA9000E5B3B /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -516,6 +538,9 @@
 			dependencies = (
 			);
 			name = Flight;
+			packageProductDependencies = (
+				11D31A712B4703E4000E5B3B /* TabloidView */,
+			);
 			productName = Flight;
 			productReference = 115E3134217B2D1500357D6D /* Flight.app */;
 			productType = "com.apple.product-type.application";
@@ -589,6 +614,9 @@
 				en,
 			);
 			mainGroup = 115E312B217B2D1500357D6D;
+			packageReferences = (
+				11D31A702B4703E4000E5B3B /* XCRemoteSwiftPackageReference "TabloidView" */,
+			);
 			productRefGroup = 115E3135217B2D1500357D6D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -636,28 +664,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				115E3185217B325500357D6D /* DateFormatter+Extension.swift in Sources */,
-				113A251D217C6C5100AB90B9 /* EventDetailViewController.swift in Sources */,
+				113A251D217C6C5100AB90B9 /* EventViewController.swift in Sources */,
 				114427BF2B462FBC0044DEBE /* EstimateTimeView.swift in Sources */,
 				115E318B217B3AD700357D6D /* TimeInterval+Extension.swift in Sources */,
 				114427BC2B4629A70044DEBE /* MoveView.swift in Sources */,
+				11D31A862B47796F000E5B3B /* FlightTabloidCellViewModelFactory.swift in Sources */,
+				11D31A7F2B476DA9000E5B3B /* Router.swift in Sources */,
 				115E3138217B2D1500357D6D /* AppDelegate.swift in Sources */,
+				11D31A812B476DC9000E5B3B /* RouterFactory.swift in Sources */,
 				113A250D217BEAD300AB90B9 /* NavigationController.swift in Sources */,
 				114427B82B4625560044DEBE /* AirplaneView.swift in Sources */,
+				11D31A742B470446000E5B3B /* FlightViewModel.swift in Sources */,
 				115E3177217B2EF200357D6D /* Notice.swift in Sources */,
 				115E3196217B57DA00357D6D /* BaseViewController.swift in Sources */,
-				113A2500217BCF7D00AB90B9 /* FlightListTableViewCell.swift in Sources */,
+				113A2500217BCF7D00AB90B9 /* FlightTabloidCellView.swift in Sources */,
 				115E319C217B5DC900357D6D /* Data+Extension.swift in Sources */,
 				115E317E217B2F3900357D6D /* Move.swift in Sources */,
 				115E3188217B349A00357D6D /* Date+Extension.swift in Sources */,
 				113A2518217BEEEC00AB90B9 /* String+Extension.swift in Sources */,
+				11D31A7A2B4769AC000E5B3B /* EventViewModel.swift in Sources */,
 				113A2506217BDA1500AB90B9 /* UIColor+Extension.swift in Sources */,
-				115E316C217B2E5700357D6D /* FlightListViewController.swift in Sources */,
-				113A2523217C6DE300AB90B9 /* NoticeDetailViewController.swift in Sources */,
+				115E316C217B2E5700357D6D /* FlightViewController.swift in Sources */,
+				11D31A782B47122C000E5B3B /* NoticeViewModel.swift in Sources */,
+				11D31A762B47074A000E5B3B /* FlightTabloidCellViewModel.swift in Sources */,
+				113A2523217C6DE300AB90B9 /* NoticeViewController.swift in Sources */,
 				113A2509217BEA0800AB90B9 /* UIImage+Extension.swift in Sources */,
+				11D31A7C2B476C20000E5B3B /* MoveViewModel.swift in Sources */,
 				115E317B217B2F1E00357D6D /* Event.swift in Sources */,
 				115E319F217B640800357D6D /* JSONDecoder+Extension.swift in Sources */,
 				113A252E217C727E00AB90B9 /* FlightDetailViewControllerProtocol.swift in Sources */,
-				113A2529217C6EF500AB90B9 /* MoveDetailViewController.swift in Sources */,
+				11D31A832B47726F000E5B3B /* ViewModelProtocol.swift in Sources */,
+				113A2529217C6EF500AB90B9 /* MoveViewController.swift in Sources */,
 				115E3174217B2EC300357D6D /* FlightController.swift in Sources */,
 				115E3181217B316600357D6D /* FlightProtocol.swift in Sources */,
 			);
@@ -831,7 +868,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/Flight/Sources/SupportingFiles/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -852,7 +889,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/Flight/Sources/SupportingFiles/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -985,6 +1022,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		11D31A702B4703E4000E5B3B /* XCRemoteSwiftPackageReference "TabloidView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AlexanderKadyrov/TabloidView";
+			requirement = {
+				kind = exactVersion;
+				version = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		11D31A712B4703E4000E5B3B /* TabloidView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11D31A702B4703E4000E5B3B /* XCRemoteSwiftPackageReference "TabloidView" */;
+			productName = TabloidView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 115E312C217B2D1500357D6D /* Project object */;
 }

@@ -44,4 +44,8 @@ extension Event: FlightProtocol {
         ]
         return values.joined(separator: "\n")
     }
+    
+    var path: Router.Path {
+        return .event
+    }
 }
