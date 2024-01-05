@@ -24,8 +24,8 @@ final class Router {
         self.rootViewController = rootViewController
     }
     
-    func push(path: Path, model: FlightProtocol, animated: Bool) {
-        let viewController = factory.viewController(path: path, model: model)
+    func push(model: FlightProtocol, animated: Bool) {
+        let viewController = factory.viewController(model: model)
         rootViewController?.pushViewController(viewController, animated: animated)
     }
 }
