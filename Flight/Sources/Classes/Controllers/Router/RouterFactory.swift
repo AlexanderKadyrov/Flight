@@ -11,8 +11,8 @@ import UIKit
 
 final class RouterFactory {
     
-    func viewController(path: Router.Path, model: FlightProtocol) -> UIViewController {
-        switch path {
+    func viewController(model: FlightProtocol) -> UIViewController {
+        switch model.path {
         case .notice:
             return noticeViewController(model: model)
         case .event:
