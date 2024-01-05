@@ -17,7 +17,7 @@ final class Router {
         case move
     }
     
-    private let rootViewController: NavigationController
+    private weak var rootViewController: NavigationController?
     private let factory = RouterFactory()
     
     init(rootViewController: NavigationController) {
@@ -26,6 +26,6 @@ final class Router {
     
     func push(path: Path, model: FlightProtocol, animated: Bool) {
         let viewController = factory.viewController(path: path, model: model)
-        rootViewController.pushViewController(viewController, animated: animated)
+        rootViewController?.pushViewController(viewController, animated: animated)
     }
 }
