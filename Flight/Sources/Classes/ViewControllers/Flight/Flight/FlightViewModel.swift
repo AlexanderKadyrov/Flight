@@ -30,7 +30,7 @@ final class FlightViewModel {
         publisher
             .compactMap { $0 as? FlightTabloidCellViewModel }
             .sink { [weak self] cellViewModel in
-                self?.router?.push(path: cellViewModel.model.path, model: cellViewModel.model, animated: true)
+                self?.router?.push(model: cellViewModel.model, animated: true)
             }
             .store(in: &subscriptions)
     }
